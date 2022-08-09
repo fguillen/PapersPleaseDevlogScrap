@@ -42,16 +42,18 @@
 
     <div class="row g-5">
       <div class="col-md-8">
-        <h3 class="pb-4 mb-4 fst-italic border-bottom">
-          Let's start from the begining...
-        </h3>
+        <% articles_month.each do |month, articles| %>
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="<%= month.gsub(" ", "") %>">
+            <%= month %>...
+          </h3>
 
-        <% articles.each do |article| %>
-          <article class="blog-post" id="<%= article[:id] %>">
-            <h2 class="blog-post-title mb-1"><%= article[:date] %></h2>
-            <p class="blog-post-meta">at <%= article[:time] %></p>
-            <%= article[:content] %>
-          </article>
+          <% articles.each do |article| %>
+            <article class="blog-post" id="<%= article[:id] %>">
+              <h2 class="blog-post-title mb-1"><%= article[:date] %></h2>
+              <p class="blog-post-meta">at <%= article[:time] %></p>
+              <%= article[:content] %>
+            </article>
+          <% end %>
         <% end %>
 
         <nav class="blog-pagination" aria-label="Pagination">
@@ -68,10 +70,10 @@
             wrote on his devlog.</p>
           </div>
           <div class="p-4">
-            <h4 class="fst-italic">Articles</h4>
+            <h4 class="fst-italic">Archive</h4>
             <ol class="list-unstyled mb-0">
-              <% articles.each do |article| %>
-                <li><a href="#<%= article[:id] %>"><%= article[:date] %> at <%= article[:time] %></a></li>
+              <% articles_month.each do |month, _| %>
+                <li><a href="#<%= month.gsub(" ", "") %>"><%= month %></a></li>
               <% end %>
             </ol>
           </div>

@@ -25,7 +25,13 @@ class Script
     # puts "articles: #{JSON.pretty_generate articles}"
     template_index = File.read(TEMPLATE_PATH_INDEX)
     erb = ERB.new(template_index)
-    html = erb.result_with_hash(articles: articles)
+
+    articles_month = articles.group_by { |e| e[:month] }
+
+    # puts "articles_month: #{articles_month}"s
+
+
+    html = erb.result_with_hash(articles_month: articles_month)
 
     File.open(RESULT_PATH, "w") { |f| f.write html }
   end
@@ -54,6 +60,7 @@ class Script
 
       date = datetime.strftime("%Y %B %d")
       time = datetime.strftime("%H:%M")
+      month = datetime.strftime("%Y %B")
       id = datetime.strftime("%Y%m%d%H%M")
 
       content = element.css("div.post")
@@ -63,8 +70,10 @@ class Script
 
       articles << {
         id: id,
+        datetime: datetime,
         date: date,
         time: time,
+        month: month,
         content: content.inner_html
       }
     end

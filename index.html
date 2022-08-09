@@ -42,15 +42,16 @@
 
     <div class="row g-5">
       <div class="col-md-8">
-        <h3 class="pb-4 mb-4 fst-italic border-bottom">
-          Let's start from the begining...
-        </h3>
+        
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2012November">
+            2012 November...
+          </h3>
 
-        
-          <article class="blog-post" id="201211142306">
-            <h2 class="blog-post-title mb-1">2012 November 14</h2>
-            <p class="blog-post-meta">at 23:06</p>
-            <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
+          
+            <article class="blog-post" id="201211142306">
+              <h2 class="blog-post-title mb-1">2012 November 14</h2>
+              <p class="blog-post-meta">at 23:06</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
 <br><div align="center"><span style="font-size: 14pt; line-height: 1.3em;"><b><a href="https://forums.tigsource.com/index.php?topic=29750.msg925363#msg925363" target="_blank">&gt;&gt; Release info in the announcement post here &lt;&lt;</a></b></span></div>
 <br><hr>
 <span style="font-size: 12pt; line-height: 1.3em;"><b>Old Stuff</b></span><br><br>Ever taken an international flight to a foreign country and felt nervous passing through the immigration checkpoint? <i>Papers, Please</i> aims to turn that around and put you in the role of immigration inspector. Instead of working in a nice modern airport booth, you're assigned to the Ministry of Admission in the war-torn dystopian nation of Arstotzka. <br><br>The glorious and free country of Arstotzka has just ended a 6-year war with neighboring Kolechia and reclaimed its rightful half of the border town, Grestin. Your job is to control the flow of people entering the Arstotzkan side of Grestin from Kolechia. Among the throngs of immigrants and visitors looking for work are hidden smugglers, spies, and terrorists. Using only the documents provided by travelers and MoA's primitive computer dispatch system you must decide who can enter Arstotzka and who will be turned away or arrested.<br><br>Ok, that's the setup. Some elements of this are pretty similar to my other game, "The Republia Times". I'm a sucker for dystopian settings.<br><br>Let's have a mockup:<br><img src="https://i.imgur.com/BhXlv19.png" alt="" border="0"><br><br>Lookin a bit empty at this point. The enemy country is on the left and your country is on the right. The top of the screen is the actual border checkpoint and the bottom is inside your booth. Travelers will queue on the top left, pass through your inspection building, then on to enter Arstotzka on the top right. People will enter the inspection booth, you click on their documents and vet them by looking for discrepancies, then you either approve their entry visa or deny their crossing (with or without prejudice).<br><br>A little closer:<br><img src="https://i.imgur.com/6OTH0NO.png" alt="" border="0"><br><br>I haven't completely worked out the precise mechanics yet, but it's probably going to boil down to inspecting all the documents and trying to find any two pieces of information that don't match. For example, if a traveler's passport says they weigh 70kgs, but their current measured weight is 74kgs, you have reason to be suspicious. Highlighting these two pieces of information in the UI will open up further options. In this case, you now need to run a metal detector over the guy or even strip search him. Turns out he just gained some weight so he's clear to pass. Enjoy your time in Arstotzka.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Motivation</b></span><br>The last few games I've worked on have been programming-first, art-second. This time I'm going to try to focus on the art. I'm envisioning lots of cool little pixel portraits and documents and not so many technical challenges. A big part of the game is the traveler portraits so I want to spend a fair amount of time creating those. I'm also considering a system to create face variations from my initial drawings. I guess that would be a technical task so we'll see.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>More About the Art</b></span><br>I don't have any formal art training so I'm just gonna copy what I see elsewhere. One thing I like about some of the better pixel-art games is the limited palette. Instead of choosing a global palette though, I'm going to try limiting individual objects or backgrounds to ~3 shades. That's not a hard rule and if it doesn't look good I'm flexible. You can already see a few places in the mockup like that. <br><br>For the initial version of the game I'm going to do everything in mid-res pixel art. Pixel art is just way easier, faster, and more enjoyable for me. When it comes to most commercial games however I think pixel art may not be a good choice. It works great for indies and people close to the scene, but my feeling is that most mainstream players prefer a smoother non-pixelated look. I've made some rough experiments with converting the small character portraits to full vector images and they don't look half bad. If I decide to turn this in to a commercial game it's possible I'll do that for all the art. I kinda did the same thing with Helsing's Fire and that turned out ok.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Technical</b></span><br>I've got a really sweet custom C++ engine built on SDL just sitting here but I'm planning to use HaxeNME for this project. I've done 2 flash games before and really like the fact that they're so easy for others to play. HaxeNME looks interesting and is a slight hedge on this game getting good enough to sell as a native app. Actually I'm a full-time indie developer so I'm really hoping to sell the game when it's done. If it's any good. Next point..<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>DevLog</b></span><br>I've made a bunch of games but never kept a devlog before. I'll do my best to keep this thread updated with screenshots and builds. I don't expect the entire game to take more than a few <del>weeks</del> months to develop. <del>I'll probably edit that sentence out in a few months</del>. Any feedback is appreciated.<br><br><div align="center">______________________________________________________________________<br><br>There are updates throughout the thread, but I'll just put this here:<br><br><b><span style="font-size: 14pt; line-height: 1.3em;"><a href="http://dukope.com/#ppl" target="_blank">&gt;&gt; Get the Latest Build &lt;&lt;</a><br></span></b><br>(Currently in beta so missing some stuff)<br><br>______________________________________________________________________<br>
@@ -58,38 +59,38 @@
 <br><div align="center">
 <span style="font-size: 12pt; line-height: 1.3em;"><b>Want your name in the game?</b></span><br><br>I'm including real names for the immigrants. Add yours here:<br><a href="http://dukope.com/usemyname" target="_blank"><br><img src="https://i.imgur.com/D6o4xdP.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>dukope.com/usemyname</b></span></a><br><br>______________________________________________________________________<br><br><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=138290904" target="_blank"><img src="https://i.imgur.com/Z3LYqil.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please on Steam Greenlight</b></span></a><br><br>Please vote!<br><br>______________________________________________________________________<br><br>
 </div>
-          </article>
-        
-          <article class="blog-post" id="201211161118">
-            <h2 class="blog-post-title mb-1">2012 November 16</h2>
-            <p class="blog-post-meta">at 11:18</p>
-            <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
+            </article>
+          
+            <article class="blog-post" id="201211161118">
+              <h2 class="blog-post-title mb-1">2012 November 16</h2>
+              <p class="blog-post-meta">at 11:18</p>
+              <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
 </blockquote>
 <br>More or less, yeah. There will be some activity in the border checkpoint area at the top, but most of the focus will be in the booth.<br><br>If the inspection gameplay works out ok, I'm also thinking of incorporating the contrary mode where you work as a smuggler/spy-chief/terrorist-leader for the enemy state. You'd be assigned tasks ("smuggle 20kg of bullets"), recruit agents to pass through the border, set them up with fake documents, hide contraband on their body (you know where), and send them through the checkpoint. I guess that would take place in a different setting.<br><br>A possible extension of that is to have player-created smugglers in the pool of travelers passing through player-controlled inspectors. And THAT... might make a half-decent play-by-day multiplayer game.<br>
-          </article>
-        
-          <article class="blog-post" id="201211180841">
-            <h2 class="blog-post-title mb-1">2012 November 18</h2>
-            <p class="blog-post-meta">at 08:41</p>
-            <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
+            </article>
+          
+            <article class="blog-post" id="201211180841">
+              <h2 class="blog-post-title mb-1">2012 November 18</h2>
+              <p class="blog-post-meta">at 08:41</p>
+              <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
 </blockquote>
 <br>Hah, thanks! No rotoscoping, I just drew those frames by hand. With so few pixels it's pretty easy to iterate on. Now that you mention it though, rotoscopy is exactly the look I'm going for.  I kept thinking "natural" animation but what I want is that classic low-res rotoscoping feel. I'm glad you mentioned this cuz now I know what better to aim for <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><blockquote class="blockquote">If your resolution is not set in stone...I hope you don't mind me editing it's just that I've wrestled with limited screenspace a lot.<br>
 </blockquote>
 <br>I was thinking it best to stick to 16:9, but after seeing your mockup I'm not so sure anymore. 3:2 gives a lot more room to work with. I probably don't know enough about what kinds of documents the game will include to decide right now but I'm gonna experiment with 960x640 as you suggest. Thank you for the ideas! I absolutely don't mind you editing the mockup and I really appreciate the help.<br><br>Btw, this is exactly the kind of challenge I enjoy. I'll take a limited resolution, palette, or game mechanic over unlimited freedom any day. Given Pioneers resolution and (awesome) palette, I'll bet you're the same way <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0">
-          </article>
-        
-          <article class="blog-post" id="201211190443">
-            <h2 class="blog-post-title mb-1">2012 November 19</h2>
-            <p class="blog-post-meta">at 04:43</p>
-            <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
+            </article>
+          
+            <article class="blog-post" id="201211190443">
+              <h2 class="blog-post-title mb-1">2012 November 19</h2>
+              <p class="blog-post-meta">at 04:43</p>
+              <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
 </blockquote>
 <br>Thanks spolvid. This game will probably have a similar flavor so I hope you enjoy it too.<br><br>Slightly updated layout with taller resolution:<br><img src="https://i.imgur.com/aS4gS.png" alt="" border="0"><br><br>Eigen's suggestion prompted me to keep experimenting with the mockup. With a 3:2 aspect, there's room to rearrange the inspection booth a bit and give the doc inspection area more space. Each document can be maximum 150x215 and 2 documents can be visible at any time. Teletex query results, the audio transcript, and the rule book will behave just like documents. This'll be nice for consistency and having the docs side-by-side makes it easier to find and highlight discrepancies. 150x215 is not a lot of space but my feeling is that the docs shouldn't be too complicated so hopefully it works out.<br><br>Closeup:<br><img src="https://i.imgur.com/vqdTc.png" alt="" border="0"><br><br>From left to right there's a clock, scale readout, microphone, computer screen, and notebook. Not sure what to do with the clock just yet but there'll probably be some time component to the gameplay. Scale shows the person's weight, mic will show the audio transcript document when clicked, computer screen will show the teletex document when clicked, and the notebook will show the rule book when clicked. <br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Rule Book</b></span><br>In order to establish the baseline regulations for which documents and information a traveler must have to enter, there's a rule book. This lists things like "Traveler must have an entry permit", "Traveler must be over 18", etc. If a rule is being broken, it can be highlighted for further options. One example would be the "Traveler must be over 18" rule. If you inspect their passport and calculate their age to be &lt; 18, you can select both their passport birthdate and the age rule. This will highlight the discrepancy and open up a teletex query or a question you can ask the traveler.
-          </article>
-        
-          <article class="blog-post" id="201211142306">
-            <h2 class="blog-post-title mb-1">2012 November 14</h2>
-            <p class="blog-post-meta">at 23:06</p>
-            <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
+            </article>
+          
+            <article class="blog-post" id="201211142306">
+              <h2 class="blog-post-title mb-1">2012 November 14</h2>
+              <p class="blog-post-meta">at 23:06</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
 <br><div align="center"><span style="font-size: 14pt; line-height: 1.3em;"><b><a href="https://forums.tigsource.com/index.php?topic=29750.msg925363#msg925363" target="_blank">&gt;&gt; Release info in the announcement post here &lt;&lt;</a></b></span></div>
 <br><hr>
 <span style="font-size: 12pt; line-height: 1.3em;"><b>Old Stuff</b></span><br><br>Ever taken an international flight to a foreign country and felt nervous passing through the immigration checkpoint? <i>Papers, Please</i> aims to turn that around and put you in the role of immigration inspector. Instead of working in a nice modern airport booth, you're assigned to the Ministry of Admission in the war-torn dystopian nation of Arstotzka. <br><br>The glorious and free country of Arstotzka has just ended a 6-year war with neighboring Kolechia and reclaimed its rightful half of the border town, Grestin. Your job is to control the flow of people entering the Arstotzkan side of Grestin from Kolechia. Among the throngs of immigrants and visitors looking for work are hidden smugglers, spies, and terrorists. Using only the documents provided by travelers and MoA's primitive computer dispatch system you must decide who can enter Arstotzka and who will be turned away or arrested.<br><br>Ok, that's the setup. Some elements of this are pretty similar to my other game, "The Republia Times". I'm a sucker for dystopian settings.<br><br>Let's have a mockup:<br><img src="https://i.imgur.com/BhXlv19.png" alt="" border="0"><br><br>Lookin a bit empty at this point. The enemy country is on the left and your country is on the right. The top of the screen is the actual border checkpoint and the bottom is inside your booth. Travelers will queue on the top left, pass through your inspection building, then on to enter Arstotzka on the top right. People will enter the inspection booth, you click on their documents and vet them by looking for discrepancies, then you either approve their entry visa or deny their crossing (with or without prejudice).<br><br>A little closer:<br><img src="https://i.imgur.com/6OTH0NO.png" alt="" border="0"><br><br>I haven't completely worked out the precise mechanics yet, but it's probably going to boil down to inspecting all the documents and trying to find any two pieces of information that don't match. For example, if a traveler's passport says they weigh 70kgs, but their current measured weight is 74kgs, you have reason to be suspicious. Highlighting these two pieces of information in the UI will open up further options. In this case, you now need to run a metal detector over the guy or even strip search him. Turns out he just gained some weight so he's clear to pass. Enjoy your time in Arstotzka.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Motivation</b></span><br>The last few games I've worked on have been programming-first, art-second. This time I'm going to try to focus on the art. I'm envisioning lots of cool little pixel portraits and documents and not so many technical challenges. A big part of the game is the traveler portraits so I want to spend a fair amount of time creating those. I'm also considering a system to create face variations from my initial drawings. I guess that would be a technical task so we'll see.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>More About the Art</b></span><br>I don't have any formal art training so I'm just gonna copy what I see elsewhere. One thing I like about some of the better pixel-art games is the limited palette. Instead of choosing a global palette though, I'm going to try limiting individual objects or backgrounds to ~3 shades. That's not a hard rule and if it doesn't look good I'm flexible. You can already see a few places in the mockup like that. <br><br>For the initial version of the game I'm going to do everything in mid-res pixel art. Pixel art is just way easier, faster, and more enjoyable for me. When it comes to most commercial games however I think pixel art may not be a good choice. It works great for indies and people close to the scene, but my feeling is that most mainstream players prefer a smoother non-pixelated look. I've made some rough experiments with converting the small character portraits to full vector images and they don't look half bad. If I decide to turn this in to a commercial game it's possible I'll do that for all the art. I kinda did the same thing with Helsing's Fire and that turned out ok.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Technical</b></span><br>I've got a really sweet custom C++ engine built on SDL just sitting here but I'm planning to use HaxeNME for this project. I've done 2 flash games before and really like the fact that they're so easy for others to play. HaxeNME looks interesting and is a slight hedge on this game getting good enough to sell as a native app. Actually I'm a full-time indie developer so I'm really hoping to sell the game when it's done. If it's any good. Next point..<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>DevLog</b></span><br>I've made a bunch of games but never kept a devlog before. I'll do my best to keep this thread updated with screenshots and builds. I don't expect the entire game to take more than a few <del>weeks</del> months to develop. <del>I'll probably edit that sentence out in a few months</del>. Any feedback is appreciated.<br><br><div align="center">______________________________________________________________________<br><br>There are updates throughout the thread, but I'll just put this here:<br><br><b><span style="font-size: 14pt; line-height: 1.3em;"><a href="http://dukope.com/#ppl" target="_blank">&gt;&gt; Get the Latest Build &lt;&lt;</a><br></span></b><br>(Currently in beta so missing some stuff)<br><br>______________________________________________________________________<br>
@@ -97,38 +98,38 @@
 <br><div align="center">
 <span style="font-size: 12pt; line-height: 1.3em;"><b>Want your name in the game?</b></span><br><br>I'm including real names for the immigrants. Add yours here:<br><a href="http://dukope.com/usemyname" target="_blank"><br><img src="https://i.imgur.com/D6o4xdP.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>dukope.com/usemyname</b></span></a><br><br>______________________________________________________________________<br><br><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=138290904" target="_blank"><img src="https://i.imgur.com/Z3LYqil.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please on Steam Greenlight</b></span></a><br><br>Please vote!<br><br>______________________________________________________________________<br><br>
 </div>
-          </article>
-        
-          <article class="blog-post" id="201211161118">
-            <h2 class="blog-post-title mb-1">2012 November 16</h2>
-            <p class="blog-post-meta">at 11:18</p>
-            <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
+            </article>
+          
+            <article class="blog-post" id="201211161118">
+              <h2 class="blog-post-title mb-1">2012 November 16</h2>
+              <p class="blog-post-meta">at 11:18</p>
+              <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
 </blockquote>
 <br>More or less, yeah. There will be some activity in the border checkpoint area at the top, but most of the focus will be in the booth.<br><br>If the inspection gameplay works out ok, I'm also thinking of incorporating the contrary mode where you work as a smuggler/spy-chief/terrorist-leader for the enemy state. You'd be assigned tasks ("smuggle 20kg of bullets"), recruit agents to pass through the border, set them up with fake documents, hide contraband on their body (you know where), and send them through the checkpoint. I guess that would take place in a different setting.<br><br>A possible extension of that is to have player-created smugglers in the pool of travelers passing through player-controlled inspectors. And THAT... might make a half-decent play-by-day multiplayer game.<br>
-          </article>
-        
-          <article class="blog-post" id="201211180841">
-            <h2 class="blog-post-title mb-1">2012 November 18</h2>
-            <p class="blog-post-meta">at 08:41</p>
-            <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
+            </article>
+          
+            <article class="blog-post" id="201211180841">
+              <h2 class="blog-post-title mb-1">2012 November 18</h2>
+              <p class="blog-post-meta">at 08:41</p>
+              <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
 </blockquote>
 <br>Hah, thanks! No rotoscoping, I just drew those frames by hand. With so few pixels it's pretty easy to iterate on. Now that you mention it though, rotoscopy is exactly the look I'm going for.  I kept thinking "natural" animation but what I want is that classic low-res rotoscoping feel. I'm glad you mentioned this cuz now I know what better to aim for <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><blockquote class="blockquote">If your resolution is not set in stone...I hope you don't mind me editing it's just that I've wrestled with limited screenspace a lot.<br>
 </blockquote>
 <br>I was thinking it best to stick to 16:9, but after seeing your mockup I'm not so sure anymore. 3:2 gives a lot more room to work with. I probably don't know enough about what kinds of documents the game will include to decide right now but I'm gonna experiment with 960x640 as you suggest. Thank you for the ideas! I absolutely don't mind you editing the mockup and I really appreciate the help.<br><br>Btw, this is exactly the kind of challenge I enjoy. I'll take a limited resolution, palette, or game mechanic over unlimited freedom any day. Given Pioneers resolution and (awesome) palette, I'll bet you're the same way <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0">
-          </article>
-        
-          <article class="blog-post" id="201211190443">
-            <h2 class="blog-post-title mb-1">2012 November 19</h2>
-            <p class="blog-post-meta">at 04:43</p>
-            <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
+            </article>
+          
+            <article class="blog-post" id="201211190443">
+              <h2 class="blog-post-title mb-1">2012 November 19</h2>
+              <p class="blog-post-meta">at 04:43</p>
+              <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
 </blockquote>
 <br>Thanks spolvid. This game will probably have a similar flavor so I hope you enjoy it too.<br><br>Slightly updated layout with taller resolution:<br><img src="https://i.imgur.com/aS4gS.png" alt="" border="0"><br><br>Eigen's suggestion prompted me to keep experimenting with the mockup. With a 3:2 aspect, there's room to rearrange the inspection booth a bit and give the doc inspection area more space. Each document can be maximum 150x215 and 2 documents can be visible at any time. Teletex query results, the audio transcript, and the rule book will behave just like documents. This'll be nice for consistency and having the docs side-by-side makes it easier to find and highlight discrepancies. 150x215 is not a lot of space but my feeling is that the docs shouldn't be too complicated so hopefully it works out.<br><br>Closeup:<br><img src="https://i.imgur.com/vqdTc.png" alt="" border="0"><br><br>From left to right there's a clock, scale readout, microphone, computer screen, and notebook. Not sure what to do with the clock just yet but there'll probably be some time component to the gameplay. Scale shows the person's weight, mic will show the audio transcript document when clicked, computer screen will show the teletex document when clicked, and the notebook will show the rule book when clicked. <br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Rule Book</b></span><br>In order to establish the baseline regulations for which documents and information a traveler must have to enter, there's a rule book. This lists things like "Traveler must have an entry permit", "Traveler must be over 18", etc. If a rule is being broken, it can be highlighted for further options. One example would be the "Traveler must be over 18" rule. If you inspect their passport and calculate their age to be &lt; 18, you can select both their passport birthdate and the age rule. This will highlight the discrepancy and open up a teletex query or a question you can ask the traveler.
-          </article>
-        
-          <article class="blog-post" id="201211142306">
-            <h2 class="blog-post-title mb-1">2012 November 14</h2>
-            <p class="blog-post-meta">at 23:06</p>
-            <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
+            </article>
+          
+            <article class="blog-post" id="201211142306">
+              <h2 class="blog-post-title mb-1">2012 November 14</h2>
+              <p class="blog-post-meta">at 23:06</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
 <br><div align="center"><span style="font-size: 14pt; line-height: 1.3em;"><b><a href="https://forums.tigsource.com/index.php?topic=29750.msg925363#msg925363" target="_blank">&gt;&gt; Release info in the announcement post here &lt;&lt;</a></b></span></div>
 <br><hr>
 <span style="font-size: 12pt; line-height: 1.3em;"><b>Old Stuff</b></span><br><br>Ever taken an international flight to a foreign country and felt nervous passing through the immigration checkpoint? <i>Papers, Please</i> aims to turn that around and put you in the role of immigration inspector. Instead of working in a nice modern airport booth, you're assigned to the Ministry of Admission in the war-torn dystopian nation of Arstotzka. <br><br>The glorious and free country of Arstotzka has just ended a 6-year war with neighboring Kolechia and reclaimed its rightful half of the border town, Grestin. Your job is to control the flow of people entering the Arstotzkan side of Grestin from Kolechia. Among the throngs of immigrants and visitors looking for work are hidden smugglers, spies, and terrorists. Using only the documents provided by travelers and MoA's primitive computer dispatch system you must decide who can enter Arstotzka and who will be turned away or arrested.<br><br>Ok, that's the setup. Some elements of this are pretty similar to my other game, "The Republia Times". I'm a sucker for dystopian settings.<br><br>Let's have a mockup:<br><img src="https://i.imgur.com/BhXlv19.png" alt="" border="0"><br><br>Lookin a bit empty at this point. The enemy country is on the left and your country is on the right. The top of the screen is the actual border checkpoint and the bottom is inside your booth. Travelers will queue on the top left, pass through your inspection building, then on to enter Arstotzka on the top right. People will enter the inspection booth, you click on their documents and vet them by looking for discrepancies, then you either approve their entry visa or deny their crossing (with or without prejudice).<br><br>A little closer:<br><img src="https://i.imgur.com/6OTH0NO.png" alt="" border="0"><br><br>I haven't completely worked out the precise mechanics yet, but it's probably going to boil down to inspecting all the documents and trying to find any two pieces of information that don't match. For example, if a traveler's passport says they weigh 70kgs, but their current measured weight is 74kgs, you have reason to be suspicious. Highlighting these two pieces of information in the UI will open up further options. In this case, you now need to run a metal detector over the guy or even strip search him. Turns out he just gained some weight so he's clear to pass. Enjoy your time in Arstotzka.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Motivation</b></span><br>The last few games I've worked on have been programming-first, art-second. This time I'm going to try to focus on the art. I'm envisioning lots of cool little pixel portraits and documents and not so many technical challenges. A big part of the game is the traveler portraits so I want to spend a fair amount of time creating those. I'm also considering a system to create face variations from my initial drawings. I guess that would be a technical task so we'll see.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>More About the Art</b></span><br>I don't have any formal art training so I'm just gonna copy what I see elsewhere. One thing I like about some of the better pixel-art games is the limited palette. Instead of choosing a global palette though, I'm going to try limiting individual objects or backgrounds to ~3 shades. That's not a hard rule and if it doesn't look good I'm flexible. You can already see a few places in the mockup like that. <br><br>For the initial version of the game I'm going to do everything in mid-res pixel art. Pixel art is just way easier, faster, and more enjoyable for me. When it comes to most commercial games however I think pixel art may not be a good choice. It works great for indies and people close to the scene, but my feeling is that most mainstream players prefer a smoother non-pixelated look. I've made some rough experiments with converting the small character portraits to full vector images and they don't look half bad. If I decide to turn this in to a commercial game it's possible I'll do that for all the art. I kinda did the same thing with Helsing's Fire and that turned out ok.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Technical</b></span><br>I've got a really sweet custom C++ engine built on SDL just sitting here but I'm planning to use HaxeNME for this project. I've done 2 flash games before and really like the fact that they're so easy for others to play. HaxeNME looks interesting and is a slight hedge on this game getting good enough to sell as a native app. Actually I'm a full-time indie developer so I'm really hoping to sell the game when it's done. If it's any good. Next point..<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>DevLog</b></span><br>I've made a bunch of games but never kept a devlog before. I'll do my best to keep this thread updated with screenshots and builds. I don't expect the entire game to take more than a few <del>weeks</del> months to develop. <del>I'll probably edit that sentence out in a few months</del>. Any feedback is appreciated.<br><br><div align="center">______________________________________________________________________<br><br>There are updates throughout the thread, but I'll just put this here:<br><br><b><span style="font-size: 14pt; line-height: 1.3em;"><a href="http://dukope.com/#ppl" target="_blank">&gt;&gt; Get the Latest Build &lt;&lt;</a><br></span></b><br>(Currently in beta so missing some stuff)<br><br>______________________________________________________________________<br>
@@ -136,33 +137,34 @@
 <br><div align="center">
 <span style="font-size: 12pt; line-height: 1.3em;"><b>Want your name in the game?</b></span><br><br>I'm including real names for the immigrants. Add yours here:<br><a href="http://dukope.com/usemyname" target="_blank"><br><img src="https://i.imgur.com/D6o4xdP.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>dukope.com/usemyname</b></span></a><br><br>______________________________________________________________________<br><br><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=138290904" target="_blank"><img src="https://i.imgur.com/Z3LYqil.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please on Steam Greenlight</b></span></a><br><br>Please vote!<br><br>______________________________________________________________________<br><br>
 </div>
-          </article>
-        
-          <article class="blog-post" id="201211161118">
-            <h2 class="blog-post-title mb-1">2012 November 16</h2>
-            <p class="blog-post-meta">at 11:18</p>
-            <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
+            </article>
+          
+            <article class="blog-post" id="201211161118">
+              <h2 class="blog-post-title mb-1">2012 November 16</h2>
+              <p class="blog-post-meta">at 11:18</p>
+              <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
 </blockquote>
 <br>More or less, yeah. There will be some activity in the border checkpoint area at the top, but most of the focus will be in the booth.<br><br>If the inspection gameplay works out ok, I'm also thinking of incorporating the contrary mode where you work as a smuggler/spy-chief/terrorist-leader for the enemy state. You'd be assigned tasks ("smuggle 20kg of bullets"), recruit agents to pass through the border, set them up with fake documents, hide contraband on their body (you know where), and send them through the checkpoint. I guess that would take place in a different setting.<br><br>A possible extension of that is to have player-created smugglers in the pool of travelers passing through player-controlled inspectors. And THAT... might make a half-decent play-by-day multiplayer game.<br>
-          </article>
-        
-          <article class="blog-post" id="201211180841">
-            <h2 class="blog-post-title mb-1">2012 November 18</h2>
-            <p class="blog-post-meta">at 08:41</p>
-            <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
+            </article>
+          
+            <article class="blog-post" id="201211180841">
+              <h2 class="blog-post-title mb-1">2012 November 18</h2>
+              <p class="blog-post-meta">at 08:41</p>
+              <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
 </blockquote>
 <br>Hah, thanks! No rotoscoping, I just drew those frames by hand. With so few pixels it's pretty easy to iterate on. Now that you mention it though, rotoscopy is exactly the look I'm going for.  I kept thinking "natural" animation but what I want is that classic low-res rotoscoping feel. I'm glad you mentioned this cuz now I know what better to aim for <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><blockquote class="blockquote">If your resolution is not set in stone...I hope you don't mind me editing it's just that I've wrestled with limited screenspace a lot.<br>
 </blockquote>
 <br>I was thinking it best to stick to 16:9, but after seeing your mockup I'm not so sure anymore. 3:2 gives a lot more room to work with. I probably don't know enough about what kinds of documents the game will include to decide right now but I'm gonna experiment with 960x640 as you suggest. Thank you for the ideas! I absolutely don't mind you editing the mockup and I really appreciate the help.<br><br>Btw, this is exactly the kind of challenge I enjoy. I'll take a limited resolution, palette, or game mechanic over unlimited freedom any day. Given Pioneers resolution and (awesome) palette, I'll bet you're the same way <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0">
-          </article>
-        
-          <article class="blog-post" id="201211190443">
-            <h2 class="blog-post-title mb-1">2012 November 19</h2>
-            <p class="blog-post-meta">at 04:43</p>
-            <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
+            </article>
+          
+            <article class="blog-post" id="201211190443">
+              <h2 class="blog-post-title mb-1">2012 November 19</h2>
+              <p class="blog-post-meta">at 04:43</p>
+              <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
 </blockquote>
 <br>Thanks spolvid. This game will probably have a similar flavor so I hope you enjoy it too.<br><br>Slightly updated layout with taller resolution:<br><img src="https://i.imgur.com/aS4gS.png" alt="" border="0"><br><br>Eigen's suggestion prompted me to keep experimenting with the mockup. With a 3:2 aspect, there's room to rearrange the inspection booth a bit and give the doc inspection area more space. Each document can be maximum 150x215 and 2 documents can be visible at any time. Teletex query results, the audio transcript, and the rule book will behave just like documents. This'll be nice for consistency and having the docs side-by-side makes it easier to find and highlight discrepancies. 150x215 is not a lot of space but my feeling is that the docs shouldn't be too complicated so hopefully it works out.<br><br>Closeup:<br><img src="https://i.imgur.com/vqdTc.png" alt="" border="0"><br><br>From left to right there's a clock, scale readout, microphone, computer screen, and notebook. Not sure what to do with the clock just yet but there'll probably be some time component to the gameplay. Scale shows the person's weight, mic will show the audio transcript document when clicked, computer screen will show the teletex document when clicked, and the notebook will show the rule book when clicked. <br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Rule Book</b></span><br>In order to establish the baseline regulations for which documents and information a traveler must have to enter, there's a rule book. This lists things like "Traveler must have an entry permit", "Traveler must be over 18", etc. If a rule is being broken, it can be highlighted for further options. One example would be the "Traveler must be over 18" rule. If you inspect their passport and calculate their age to be &lt; 18, you can select both their passport birthdate and the age rule. This will highlight the discrepancy and open up a teletex query or a question you can ask the traveler.
-          </article>
+            </article>
+          
         
 
         <nav class="blog-pagination" aria-label="Pagination">
@@ -182,29 +184,7 @@
             <h4 class="fst-italic">Articles</h4>
             <ol class="list-unstyled mb-0">
               
-                <li><a href="#201211142306">2012 November 14 at 23:06</a></li>
-              
-                <li><a href="#201211161118">2012 November 16 at 11:18</a></li>
-              
-                <li><a href="#201211180841">2012 November 18 at 08:41</a></li>
-              
-                <li><a href="#201211190443">2012 November 19 at 04:43</a></li>
-              
-                <li><a href="#201211142306">2012 November 14 at 23:06</a></li>
-              
-                <li><a href="#201211161118">2012 November 16 at 11:18</a></li>
-              
-                <li><a href="#201211180841">2012 November 18 at 08:41</a></li>
-              
-                <li><a href="#201211190443">2012 November 19 at 04:43</a></li>
-              
-                <li><a href="#201211142306">2012 November 14 at 23:06</a></li>
-              
-                <li><a href="#201211161118">2012 November 16 at 11:18</a></li>
-              
-                <li><a href="#201211180841">2012 November 18 at 08:41</a></li>
-              
-                <li><a href="#201211190443">2012 November 19 at 04:43</a></li>
+                <li><a href="#2012November">2012 November</a></li>
               
             </ol>
           </div>
