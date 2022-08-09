@@ -26,7 +26,7 @@
     <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
       <div class="col-md-6 px-0">
         <h1 class="display-4 fst-italic">Papers, please · The devlog</h1>
-        <p class="lead my-3">From November 14th of 2012 to November 11th of 2013, the insane indie dev developer
+        <p class="lead my-3">From November of 2012 to March of 2014, the incredible talented indie dev developer
           <a href="https://dukope.com/">Lucas Pope</a>
           was covering the development of his famous
           <a href="https://en.wikipedia.org/wiki/Papers,_Please">Papers, please</a>
@@ -42,135 +42,669 @@
 
     <div class="row g-5">
       <div class="col-md-8">
-        
+
           <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2012November">
             2012 November...
           </h3>
 
-          
-            <article class="blog-post" id="201211142306">
-              <h2 class="blog-post-title mb-1">2012 November 14</h2>
-              <p class="blog-post-meta">at 23:06</p>
-              <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
-<br><div align="center"><span style="font-size: 14pt; line-height: 1.3em;"><b><a href="https://forums.tigsource.com/index.php?topic=29750.msg925363#msg925363" target="_blank">&gt;&gt; Release info in the announcement post here &lt;&lt;</a></b></span></div>
-<br><hr>
-<span style="font-size: 12pt; line-height: 1.3em;"><b>Old Stuff</b></span><br><br>Ever taken an international flight to a foreign country and felt nervous passing through the immigration checkpoint? <i>Papers, Please</i> aims to turn that around and put you in the role of immigration inspector. Instead of working in a nice modern airport booth, you're assigned to the Ministry of Admission in the war-torn dystopian nation of Arstotzka. <br><br>The glorious and free country of Arstotzka has just ended a 6-year war with neighboring Kolechia and reclaimed its rightful half of the border town, Grestin. Your job is to control the flow of people entering the Arstotzkan side of Grestin from Kolechia. Among the throngs of immigrants and visitors looking for work are hidden smugglers, spies, and terrorists. Using only the documents provided by travelers and MoA's primitive computer dispatch system you must decide who can enter Arstotzka and who will be turned away or arrested.<br><br>Ok, that's the setup. Some elements of this are pretty similar to my other game, "The Republia Times". I'm a sucker for dystopian settings.<br><br>Let's have a mockup:<br><img src="https://i.imgur.com/BhXlv19.png" alt="" border="0"><br><br>Lookin a bit empty at this point. The enemy country is on the left and your country is on the right. The top of the screen is the actual border checkpoint and the bottom is inside your booth. Travelers will queue on the top left, pass through your inspection building, then on to enter Arstotzka on the top right. People will enter the inspection booth, you click on their documents and vet them by looking for discrepancies, then you either approve their entry visa or deny their crossing (with or without prejudice).<br><br>A little closer:<br><img src="https://i.imgur.com/6OTH0NO.png" alt="" border="0"><br><br>I haven't completely worked out the precise mechanics yet, but it's probably going to boil down to inspecting all the documents and trying to find any two pieces of information that don't match. For example, if a traveler's passport says they weigh 70kgs, but their current measured weight is 74kgs, you have reason to be suspicious. Highlighting these two pieces of information in the UI will open up further options. In this case, you now need to run a metal detector over the guy or even strip search him. Turns out he just gained some weight so he's clear to pass. Enjoy your time in Arstotzka.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Motivation</b></span><br>The last few games I've worked on have been programming-first, art-second. This time I'm going to try to focus on the art. I'm envisioning lots of cool little pixel portraits and documents and not so many technical challenges. A big part of the game is the traveler portraits so I want to spend a fair amount of time creating those. I'm also considering a system to create face variations from my initial drawings. I guess that would be a technical task so we'll see.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>More About the Art</b></span><br>I don't have any formal art training so I'm just gonna copy what I see elsewhere. One thing I like about some of the better pixel-art games is the limited palette. Instead of choosing a global palette though, I'm going to try limiting individual objects or backgrounds to ~3 shades. That's not a hard rule and if it doesn't look good I'm flexible. You can already see a few places in the mockup like that. <br><br>For the initial version of the game I'm going to do everything in mid-res pixel art. Pixel art is just way easier, faster, and more enjoyable for me. When it comes to most commercial games however I think pixel art may not be a good choice. It works great for indies and people close to the scene, but my feeling is that most mainstream players prefer a smoother non-pixelated look. I've made some rough experiments with converting the small character portraits to full vector images and they don't look half bad. If I decide to turn this in to a commercial game it's possible I'll do that for all the art. I kinda did the same thing with Helsing's Fire and that turned out ok.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Technical</b></span><br>I've got a really sweet custom C++ engine built on SDL just sitting here but I'm planning to use HaxeNME for this project. I've done 2 flash games before and really like the fact that they're so easy for others to play. HaxeNME looks interesting and is a slight hedge on this game getting good enough to sell as a native app. Actually I'm a full-time indie developer so I'm really hoping to sell the game when it's done. If it's any good. Next point..<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>DevLog</b></span><br>I've made a bunch of games but never kept a devlog before. I'll do my best to keep this thread updated with screenshots and builds. I don't expect the entire game to take more than a few <del>weeks</del> months to develop. <del>I'll probably edit that sentence out in a few months</del>. Any feedback is appreciated.<br><br><div align="center">______________________________________________________________________<br><br>There are updates throughout the thread, but I'll just put this here:<br><br><b><span style="font-size: 14pt; line-height: 1.3em;"><a href="http://dukope.com/#ppl" target="_blank">&gt;&gt; Get the Latest Build &lt;&lt;</a><br></span></b><br>(Currently in beta so missing some stuff)<br><br>______________________________________________________________________<br>
-</div>
-<br><div align="center">
-<span style="font-size: 12pt; line-height: 1.3em;"><b>Want your name in the game?</b></span><br><br>I'm including real names for the immigrants. Add yours here:<br><a href="http://dukope.com/usemyname" target="_blank"><br><img src="https://i.imgur.com/D6o4xdP.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>dukope.com/usemyname</b></span></a><br><br>______________________________________________________________________<br><br><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=138290904" target="_blank"><img src="https://i.imgur.com/Z3LYqil.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please on Steam Greenlight</b></span></a><br><br>Please vote!<br><br>______________________________________________________________________<br><br>
-</div>
-            </article>
-          
-            <article class="blog-post" id="201211161118">
-              <h2 class="blog-post-title mb-1">2012 November 16</h2>
-              <p class="blog-post-meta">at 11:18</p>
-              <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
-</blockquote>
-<br>More or less, yeah. There will be some activity in the border checkpoint area at the top, but most of the focus will be in the booth.<br><br>If the inspection gameplay works out ok, I'm also thinking of incorporating the contrary mode where you work as a smuggler/spy-chief/terrorist-leader for the enemy state. You'd be assigned tasks ("smuggle 20kg of bullets"), recruit agents to pass through the border, set them up with fake documents, hide contraband on their body (you know where), and send them through the checkpoint. I guess that would take place in a different setting.<br><br>A possible extension of that is to have player-created smugglers in the pool of travelers passing through player-controlled inspectors. And THAT... might make a half-decent play-by-day multiplayer game.<br>
-            </article>
-          
-            <article class="blog-post" id="201211180841">
-              <h2 class="blog-post-title mb-1">2012 November 18</h2>
-              <p class="blog-post-meta">at 08:41</p>
-              <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
-</blockquote>
-<br>Hah, thanks! No rotoscoping, I just drew those frames by hand. With so few pixels it's pretty easy to iterate on. Now that you mention it though, rotoscopy is exactly the look I'm going for.  I kept thinking "natural" animation but what I want is that classic low-res rotoscoping feel. I'm glad you mentioned this cuz now I know what better to aim for <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><blockquote class="blockquote">If your resolution is not set in stone...I hope you don't mind me editing it's just that I've wrestled with limited screenspace a lot.<br>
-</blockquote>
-<br>I was thinking it best to stick to 16:9, but after seeing your mockup I'm not so sure anymore. 3:2 gives a lot more room to work with. I probably don't know enough about what kinds of documents the game will include to decide right now but I'm gonna experiment with 960x640 as you suggest. Thank you for the ideas! I absolutely don't mind you editing the mockup and I really appreciate the help.<br><br>Btw, this is exactly the kind of challenge I enjoy. I'll take a limited resolution, palette, or game mechanic over unlimited freedom any day. Given Pioneers resolution and (awesome) palette, I'll bet you're the same way <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0">
-            </article>
-          
-            <article class="blog-post" id="201211190443">
-              <h2 class="blog-post-title mb-1">2012 November 19</h2>
-              <p class="blog-post-meta">at 04:43</p>
-              <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
-</blockquote>
-<br>Thanks spolvid. This game will probably have a similar flavor so I hope you enjoy it too.<br><br>Slightly updated layout with taller resolution:<br><img src="https://i.imgur.com/aS4gS.png" alt="" border="0"><br><br>Eigen's suggestion prompted me to keep experimenting with the mockup. With a 3:2 aspect, there's room to rearrange the inspection booth a bit and give the doc inspection area more space. Each document can be maximum 150x215 and 2 documents can be visible at any time. Teletex query results, the audio transcript, and the rule book will behave just like documents. This'll be nice for consistency and having the docs side-by-side makes it easier to find and highlight discrepancies. 150x215 is not a lot of space but my feeling is that the docs shouldn't be too complicated so hopefully it works out.<br><br>Closeup:<br><img src="https://i.imgur.com/vqdTc.png" alt="" border="0"><br><br>From left to right there's a clock, scale readout, microphone, computer screen, and notebook. Not sure what to do with the clock just yet but there'll probably be some time component to the gameplay. Scale shows the person's weight, mic will show the audio transcript document when clicked, computer screen will show the teletex document when clicked, and the notebook will show the rule book when clicked. <br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Rule Book</b></span><br>In order to establish the baseline regulations for which documents and information a traveler must have to enter, there's a rule book. This lists things like "Traveler must have an entry permit", "Traveler must be over 18", etc. If a rule is being broken, it can be highlighted for further options. One example would be the "Traveler must be over 18" rule. If you inspect their passport and calculate their age to be &lt; 18, you can select both their passport birthdate and the age rule. This will highlight the discrepancy and open up a teletex query or a question you can ask the traveler.
-            </article>
-          
-            <article class="blog-post" id="201211142306">
-              <h2 class="blog-post-title mb-1">2012 November 14</h2>
-              <p class="blog-post-meta">at 23:06</p>
-              <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
-<br><div align="center"><span style="font-size: 14pt; line-height: 1.3em;"><b><a href="https://forums.tigsource.com/index.php?topic=29750.msg925363#msg925363" target="_blank">&gt;&gt; Release info in the announcement post here &lt;&lt;</a></b></span></div>
-<br><hr>
-<span style="font-size: 12pt; line-height: 1.3em;"><b>Old Stuff</b></span><br><br>Ever taken an international flight to a foreign country and felt nervous passing through the immigration checkpoint? <i>Papers, Please</i> aims to turn that around and put you in the role of immigration inspector. Instead of working in a nice modern airport booth, you're assigned to the Ministry of Admission in the war-torn dystopian nation of Arstotzka. <br><br>The glorious and free country of Arstotzka has just ended a 6-year war with neighboring Kolechia and reclaimed its rightful half of the border town, Grestin. Your job is to control the flow of people entering the Arstotzkan side of Grestin from Kolechia. Among the throngs of immigrants and visitors looking for work are hidden smugglers, spies, and terrorists. Using only the documents provided by travelers and MoA's primitive computer dispatch system you must decide who can enter Arstotzka and who will be turned away or arrested.<br><br>Ok, that's the setup. Some elements of this are pretty similar to my other game, "The Republia Times". I'm a sucker for dystopian settings.<br><br>Let's have a mockup:<br><img src="https://i.imgur.com/BhXlv19.png" alt="" border="0"><br><br>Lookin a bit empty at this point. The enemy country is on the left and your country is on the right. The top of the screen is the actual border checkpoint and the bottom is inside your booth. Travelers will queue on the top left, pass through your inspection building, then on to enter Arstotzka on the top right. People will enter the inspection booth, you click on their documents and vet them by looking for discrepancies, then you either approve their entry visa or deny their crossing (with or without prejudice).<br><br>A little closer:<br><img src="https://i.imgur.com/6OTH0NO.png" alt="" border="0"><br><br>I haven't completely worked out the precise mechanics yet, but it's probably going to boil down to inspecting all the documents and trying to find any two pieces of information that don't match. For example, if a traveler's passport says they weigh 70kgs, but their current measured weight is 74kgs, you have reason to be suspicious. Highlighting these two pieces of information in the UI will open up further options. In this case, you now need to run a metal detector over the guy or even strip search him. Turns out he just gained some weight so he's clear to pass. Enjoy your time in Arstotzka.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Motivation</b></span><br>The last few games I've worked on have been programming-first, art-second. This time I'm going to try to focus on the art. I'm envisioning lots of cool little pixel portraits and documents and not so many technical challenges. A big part of the game is the traveler portraits so I want to spend a fair amount of time creating those. I'm also considering a system to create face variations from my initial drawings. I guess that would be a technical task so we'll see.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>More About the Art</b></span><br>I don't have any formal art training so I'm just gonna copy what I see elsewhere. One thing I like about some of the better pixel-art games is the limited palette. Instead of choosing a global palette though, I'm going to try limiting individual objects or backgrounds to ~3 shades. That's not a hard rule and if it doesn't look good I'm flexible. You can already see a few places in the mockup like that. <br><br>For the initial version of the game I'm going to do everything in mid-res pixel art. Pixel art is just way easier, faster, and more enjoyable for me. When it comes to most commercial games however I think pixel art may not be a good choice. It works great for indies and people close to the scene, but my feeling is that most mainstream players prefer a smoother non-pixelated look. I've made some rough experiments with converting the small character portraits to full vector images and they don't look half bad. If I decide to turn this in to a commercial game it's possible I'll do that for all the art. I kinda did the same thing with Helsing's Fire and that turned out ok.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Technical</b></span><br>I've got a really sweet custom C++ engine built on SDL just sitting here but I'm planning to use HaxeNME for this project. I've done 2 flash games before and really like the fact that they're so easy for others to play. HaxeNME looks interesting and is a slight hedge on this game getting good enough to sell as a native app. Actually I'm a full-time indie developer so I'm really hoping to sell the game when it's done. If it's any good. Next point..<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>DevLog</b></span><br>I've made a bunch of games but never kept a devlog before. I'll do my best to keep this thread updated with screenshots and builds. I don't expect the entire game to take more than a few <del>weeks</del> months to develop. <del>I'll probably edit that sentence out in a few months</del>. Any feedback is appreciated.<br><br><div align="center">______________________________________________________________________<br><br>There are updates throughout the thread, but I'll just put this here:<br><br><b><span style="font-size: 14pt; line-height: 1.3em;"><a href="http://dukope.com/#ppl" target="_blank">&gt;&gt; Get the Latest Build &lt;&lt;</a><br></span></b><br>(Currently in beta so missing some stuff)<br><br>______________________________________________________________________<br>
-</div>
-<br><div align="center">
-<span style="font-size: 12pt; line-height: 1.3em;"><b>Want your name in the game?</b></span><br><br>I'm including real names for the immigrants. Add yours here:<br><a href="http://dukope.com/usemyname" target="_blank"><br><img src="https://i.imgur.com/D6o4xdP.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>dukope.com/usemyname</b></span></a><br><br>______________________________________________________________________<br><br><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=138290904" target="_blank"><img src="https://i.imgur.com/Z3LYqil.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please on Steam Greenlight</b></span></a><br><br>Please vote!<br><br>______________________________________________________________________<br><br>
-</div>
-            </article>
-          
-            <article class="blog-post" id="201211161118">
-              <h2 class="blog-post-title mb-1">2012 November 16</h2>
-              <p class="blog-post-meta">at 11:18</p>
-              <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
-</blockquote>
-<br>More or less, yeah. There will be some activity in the border checkpoint area at the top, but most of the focus will be in the booth.<br><br>If the inspection gameplay works out ok, I'm also thinking of incorporating the contrary mode where you work as a smuggler/spy-chief/terrorist-leader for the enemy state. You'd be assigned tasks ("smuggle 20kg of bullets"), recruit agents to pass through the border, set them up with fake documents, hide contraband on their body (you know where), and send them through the checkpoint. I guess that would take place in a different setting.<br><br>A possible extension of that is to have player-created smugglers in the pool of travelers passing through player-controlled inspectors. And THAT... might make a half-decent play-by-day multiplayer game.<br>
-            </article>
-          
-            <article class="blog-post" id="201211180841">
-              <h2 class="blog-post-title mb-1">2012 November 18</h2>
-              <p class="blog-post-meta">at 08:41</p>
-              <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
-</blockquote>
-<br>Hah, thanks! No rotoscoping, I just drew those frames by hand. With so few pixels it's pretty easy to iterate on. Now that you mention it though, rotoscopy is exactly the look I'm going for.  I kept thinking "natural" animation but what I want is that classic low-res rotoscoping feel. I'm glad you mentioned this cuz now I know what better to aim for <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><blockquote class="blockquote">If your resolution is not set in stone...I hope you don't mind me editing it's just that I've wrestled with limited screenspace a lot.<br>
-</blockquote>
-<br>I was thinking it best to stick to 16:9, but after seeing your mockup I'm not so sure anymore. 3:2 gives a lot more room to work with. I probably don't know enough about what kinds of documents the game will include to decide right now but I'm gonna experiment with 960x640 as you suggest. Thank you for the ideas! I absolutely don't mind you editing the mockup and I really appreciate the help.<br><br>Btw, this is exactly the kind of challenge I enjoy. I'll take a limited resolution, palette, or game mechanic over unlimited freedom any day. Given Pioneers resolution and (awesome) palette, I'll bet you're the same way <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0">
-            </article>
-          
-            <article class="blog-post" id="201211190443">
-              <h2 class="blog-post-title mb-1">2012 November 19</h2>
-              <p class="blog-post-meta">at 04:43</p>
-              <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
-</blockquote>
-<br>Thanks spolvid. This game will probably have a similar flavor so I hope you enjoy it too.<br><br>Slightly updated layout with taller resolution:<br><img src="https://i.imgur.com/aS4gS.png" alt="" border="0"><br><br>Eigen's suggestion prompted me to keep experimenting with the mockup. With a 3:2 aspect, there's room to rearrange the inspection booth a bit and give the doc inspection area more space. Each document can be maximum 150x215 and 2 documents can be visible at any time. Teletex query results, the audio transcript, and the rule book will behave just like documents. This'll be nice for consistency and having the docs side-by-side makes it easier to find and highlight discrepancies. 150x215 is not a lot of space but my feeling is that the docs shouldn't be too complicated so hopefully it works out.<br><br>Closeup:<br><img src="https://i.imgur.com/vqdTc.png" alt="" border="0"><br><br>From left to right there's a clock, scale readout, microphone, computer screen, and notebook. Not sure what to do with the clock just yet but there'll probably be some time component to the gameplay. Scale shows the person's weight, mic will show the audio transcript document when clicked, computer screen will show the teletex document when clicked, and the notebook will show the rule book when clicked. <br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Rule Book</b></span><br>In order to establish the baseline regulations for which documents and information a traveler must have to enter, there's a rule book. This lists things like "Traveler must have an entry permit", "Traveler must be over 18", etc. If a rule is being broken, it can be highlighted for further options. One example would be the "Traveler must be over 18" rule. If you inspect their passport and calculate their age to be &lt; 18, you can select both their passport birthdate and the age rule. This will highlight the discrepancy and open up a teletex query or a question you can ask the traveler.
-            </article>
-          
-            <article class="blog-post" id="201211142306">
-              <h2 class="blog-post-title mb-1">2012 November 14</h2>
-              <p class="blog-post-meta">at 23:06</p>
-              <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
-<br><div align="center"><span style="font-size: 14pt; line-height: 1.3em;"><b><a href="https://forums.tigsource.com/index.php?topic=29750.msg925363#msg925363" target="_blank">&gt;&gt; Release info in the announcement post here &lt;&lt;</a></b></span></div>
-<br><hr>
-<span style="font-size: 12pt; line-height: 1.3em;"><b>Old Stuff</b></span><br><br>Ever taken an international flight to a foreign country and felt nervous passing through the immigration checkpoint? <i>Papers, Please</i> aims to turn that around and put you in the role of immigration inspector. Instead of working in a nice modern airport booth, you're assigned to the Ministry of Admission in the war-torn dystopian nation of Arstotzka. <br><br>The glorious and free country of Arstotzka has just ended a 6-year war with neighboring Kolechia and reclaimed its rightful half of the border town, Grestin. Your job is to control the flow of people entering the Arstotzkan side of Grestin from Kolechia. Among the throngs of immigrants and visitors looking for work are hidden smugglers, spies, and terrorists. Using only the documents provided by travelers and MoA's primitive computer dispatch system you must decide who can enter Arstotzka and who will be turned away or arrested.<br><br>Ok, that's the setup. Some elements of this are pretty similar to my other game, "The Republia Times". I'm a sucker for dystopian settings.<br><br>Let's have a mockup:<br><img src="https://i.imgur.com/BhXlv19.png" alt="" border="0"><br><br>Lookin a bit empty at this point. The enemy country is on the left and your country is on the right. The top of the screen is the actual border checkpoint and the bottom is inside your booth. Travelers will queue on the top left, pass through your inspection building, then on to enter Arstotzka on the top right. People will enter the inspection booth, you click on their documents and vet them by looking for discrepancies, then you either approve their entry visa or deny their crossing (with or without prejudice).<br><br>A little closer:<br><img src="https://i.imgur.com/6OTH0NO.png" alt="" border="0"><br><br>I haven't completely worked out the precise mechanics yet, but it's probably going to boil down to inspecting all the documents and trying to find any two pieces of information that don't match. For example, if a traveler's passport says they weigh 70kgs, but their current measured weight is 74kgs, you have reason to be suspicious. Highlighting these two pieces of information in the UI will open up further options. In this case, you now need to run a metal detector over the guy or even strip search him. Turns out he just gained some weight so he's clear to pass. Enjoy your time in Arstotzka.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Motivation</b></span><br>The last few games I've worked on have been programming-first, art-second. This time I'm going to try to focus on the art. I'm envisioning lots of cool little pixel portraits and documents and not so many technical challenges. A big part of the game is the traveler portraits so I want to spend a fair amount of time creating those. I'm also considering a system to create face variations from my initial drawings. I guess that would be a technical task so we'll see.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>More About the Art</b></span><br>I don't have any formal art training so I'm just gonna copy what I see elsewhere. One thing I like about some of the better pixel-art games is the limited palette. Instead of choosing a global palette though, I'm going to try limiting individual objects or backgrounds to ~3 shades. That's not a hard rule and if it doesn't look good I'm flexible. You can already see a few places in the mockup like that. <br><br>For the initial version of the game I'm going to do everything in mid-res pixel art. Pixel art is just way easier, faster, and more enjoyable for me. When it comes to most commercial games however I think pixel art may not be a good choice. It works great for indies and people close to the scene, but my feeling is that most mainstream players prefer a smoother non-pixelated look. I've made some rough experiments with converting the small character portraits to full vector images and they don't look half bad. If I decide to turn this in to a commercial game it's possible I'll do that for all the art. I kinda did the same thing with Helsing's Fire and that turned out ok.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Technical</b></span><br>I've got a really sweet custom C++ engine built on SDL just sitting here but I'm planning to use HaxeNME for this project. I've done 2 flash games before and really like the fact that they're so easy for others to play. HaxeNME looks interesting and is a slight hedge on this game getting good enough to sell as a native app. Actually I'm a full-time indie developer so I'm really hoping to sell the game when it's done. If it's any good. Next point..<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>DevLog</b></span><br>I've made a bunch of games but never kept a devlog before. I'll do my best to keep this thread updated with screenshots and builds. I don't expect the entire game to take more than a few <del>weeks</del> months to develop. <del>I'll probably edit that sentence out in a few months</del>. Any feedback is appreciated.<br><br><div align="center">______________________________________________________________________<br><br>There are updates throughout the thread, but I'll just put this here:<br><br><b><span style="font-size: 14pt; line-height: 1.3em;"><a href="http://dukope.com/#ppl" target="_blank">&gt;&gt; Get the Latest Build &lt;&lt;</a><br></span></b><br>(Currently in beta so missing some stuff)<br><br>______________________________________________________________________<br>
-</div>
-<br><div align="center">
-<span style="font-size: 12pt; line-height: 1.3em;"><b>Want your name in the game?</b></span><br><br>I'm including real names for the immigrants. Add yours here:<br><a href="http://dukope.com/usemyname" target="_blank"><br><img src="https://i.imgur.com/D6o4xdP.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>dukope.com/usemyname</b></span></a><br><br>______________________________________________________________________<br><br><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=138290904" target="_blank"><img src="https://i.imgur.com/Z3LYqil.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please on Steam Greenlight</b></span></a><br><br>Please vote!<br><br>______________________________________________________________________<br><br>
-</div>
-            </article>
-          
-            <article class="blog-post" id="201211161118">
-              <h2 class="blog-post-title mb-1">2012 November 16</h2>
-              <p class="blog-post-meta">at 11:18</p>
-              <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
-</blockquote>
-<br>More or less, yeah. There will be some activity in the border checkpoint area at the top, but most of the focus will be in the booth.<br><br>If the inspection gameplay works out ok, I'm also thinking of incorporating the contrary mode where you work as a smuggler/spy-chief/terrorist-leader for the enemy state. You'd be assigned tasks ("smuggle 20kg of bullets"), recruit agents to pass through the border, set them up with fake documents, hide contraband on their body (you know where), and send them through the checkpoint. I guess that would take place in a different setting.<br><br>A possible extension of that is to have player-created smugglers in the pool of travelers passing through player-controlled inspectors. And THAT... might make a half-decent play-by-day multiplayer game.<br>
-            </article>
-          
-            <article class="blog-post" id="201211180841">
-              <h2 class="blog-post-title mb-1">2012 November 18</h2>
-              <p class="blog-post-meta">at 08:41</p>
-              <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
-</blockquote>
-<br>Hah, thanks! No rotoscoping, I just drew those frames by hand. With so few pixels it's pretty easy to iterate on. Now that you mention it though, rotoscopy is exactly the look I'm going for.  I kept thinking "natural" animation but what I want is that classic low-res rotoscoping feel. I'm glad you mentioned this cuz now I know what better to aim for <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><blockquote class="blockquote">If your resolution is not set in stone...I hope you don't mind me editing it's just that I've wrestled with limited screenspace a lot.<br>
-</blockquote>
-<br>I was thinking it best to stick to 16:9, but after seeing your mockup I'm not so sure anymore. 3:2 gives a lot more room to work with. I probably don't know enough about what kinds of documents the game will include to decide right now but I'm gonna experiment with 960x640 as you suggest. Thank you for the ideas! I absolutely don't mind you editing the mockup and I really appreciate the help.<br><br>Btw, this is exactly the kind of challenge I enjoy. I'll take a limited resolution, palette, or game mechanic over unlimited freedom any day. Given Pioneers resolution and (awesome) palette, I'll bet you're the same way <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0">
-            </article>
-          
-            <article class="blog-post" id="201211190443">
-              <h2 class="blog-post-title mb-1">2012 November 19</h2>
-              <p class="blog-post-meta">at 04:43</p>
-              <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
-</blockquote>
-<br>Thanks spolvid. This game will probably have a similar flavor so I hope you enjoy it too.<br><br>Slightly updated layout with taller resolution:<br><img src="https://i.imgur.com/aS4gS.png" alt="" border="0"><br><br>Eigen's suggestion prompted me to keep experimenting with the mockup. With a 3:2 aspect, there's room to rearrange the inspection booth a bit and give the doc inspection area more space. Each document can be maximum 150x215 and 2 documents can be visible at any time. Teletex query results, the audio transcript, and the rule book will behave just like documents. This'll be nice for consistency and having the docs side-by-side makes it easier to find and highlight discrepancies. 150x215 is not a lot of space but my feeling is that the docs shouldn't be too complicated so hopefully it works out.<br><br>Closeup:<br><img src="https://i.imgur.com/vqdTc.png" alt="" border="0"><br><br>From left to right there's a clock, scale readout, microphone, computer screen, and notebook. Not sure what to do with the clock just yet but there'll probably be some time component to the gameplay. Scale shows the person's weight, mic will show the audio transcript document when clicked, computer screen will show the teletex document when clicked, and the notebook will show the rule book when clicked. <br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Rule Book</b></span><br>In order to establish the baseline regulations for which documents and information a traveler must have to enter, there's a rule book. This lists things like "Traveler must have an entry permit", "Traveler must be over 18", etc. If a rule is being broken, it can be highlighted for further options. One example would be the "Traveler must be over 18" rule. If you inspect their passport and calculate their age to be &lt; 18, you can select both their passport birthdate and the age rule. This will highlight the discrepancy and open up a teletex query or a question you can ask the traveler.
-            </article>
-          
-        
 
-        <nav class="blog-pagination" aria-label="Pagination">
-          <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-          <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
-        </nav>
+            <article class="blog-post" id="201211142306">
+              <h2 class="blog-post-title mb-1">2012 November 14</h2>
+              <p class="blog-post-meta">at 23:06</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please</b></span><br><br><hr>
+<br><div align="center"><span style="font-size: 14pt; line-height: 1.3em;"><b><a href="https://forums.tigsource.com/index.php?topic=29750.msg925363#msg925363" target="_blank">&gt;&gt; Release info in the announcement post here &lt;&lt;</a></b></span></div>
+<br><hr>
+<span style="font-size: 12pt; line-height: 1.3em;"><b>Old Stuff</b></span><br><br>Ever taken an international flight to a foreign country and felt nervous passing through the immigration checkpoint? <i>Papers, Please</i> aims to turn that around and put you in the role of immigration inspector. Instead of working in a nice modern airport booth, you're assigned to the Ministry of Admission in the war-torn dystopian nation of Arstotzka. <br><br>The glorious and free country of Arstotzka has just ended a 6-year war with neighboring Kolechia and reclaimed its rightful half of the border town, Grestin. Your job is to control the flow of people entering the Arstotzkan side of Grestin from Kolechia. Among the throngs of immigrants and visitors looking for work are hidden smugglers, spies, and terrorists. Using only the documents provided by travelers and MoA's primitive computer dispatch system you must decide who can enter Arstotzka and who will be turned away or arrested.<br><br>Ok, that's the setup. Some elements of this are pretty similar to my other game, "The Republia Times". I'm a sucker for dystopian settings.<br><br>Let's have a mockup:<br><img src="https://i.imgur.com/BhXlv19.png" alt="" border="0"><br><br>Lookin a bit empty at this point. The enemy country is on the left and your country is on the right. The top of the screen is the actual border checkpoint and the bottom is inside your booth. Travelers will queue on the top left, pass through your inspection building, then on to enter Arstotzka on the top right. People will enter the inspection booth, you click on their documents and vet them by looking for discrepancies, then you either approve their entry visa or deny their crossing (with or without prejudice).<br><br>A little closer:<br><img src="https://i.imgur.com/6OTH0NO.png" alt="" border="0"><br><br>I haven't completely worked out the precise mechanics yet, but it's probably going to boil down to inspecting all the documents and trying to find any two pieces of information that don't match. For example, if a traveler's passport says they weigh 70kgs, but their current measured weight is 74kgs, you have reason to be suspicious. Highlighting these two pieces of information in the UI will open up further options. In this case, you now need to run a metal detector over the guy or even strip search him. Turns out he just gained some weight so he's clear to pass. Enjoy your time in Arstotzka.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Motivation</b></span><br>The last few games I've worked on have been programming-first, art-second. This time I'm going to try to focus on the art. I'm envisioning lots of cool little pixel portraits and documents and not so many technical challenges. A big part of the game is the traveler portraits so I want to spend a fair amount of time creating those. I'm also considering a system to create face variations from my initial drawings. I guess that would be a technical task so we'll see.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>More About the Art</b></span><br>I don't have any formal art training so I'm just gonna copy what I see elsewhere. One thing I like about some of the better pixel-art games is the limited palette. Instead of choosing a global palette though, I'm going to try limiting individual objects or backgrounds to ~3 shades. That's not a hard rule and if it doesn't look good I'm flexible. You can already see a few places in the mockup like that. <br><br>For the initial version of the game I'm going to do everything in mid-res pixel art. Pixel art is just way easier, faster, and more enjoyable for me. When it comes to most commercial games however I think pixel art may not be a good choice. It works great for indies and people close to the scene, but my feeling is that most mainstream players prefer a smoother non-pixelated look. I've made some rough experiments with converting the small character portraits to full vector images and they don't look half bad. If I decide to turn this in to a commercial game it's possible I'll do that for all the art. I kinda did the same thing with Helsing's Fire and that turned out ok.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Technical</b></span><br>I've got a really sweet custom C++ engine built on SDL just sitting here but I'm planning to use HaxeNME for this project. I've done 2 flash games before and really like the fact that they're so easy for others to play. HaxeNME looks interesting and is a slight hedge on this game getting good enough to sell as a native app. Actually I'm a full-time indie developer so I'm really hoping to sell the game when it's done. If it's any good. Next point..<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>DevLog</b></span><br>I've made a bunch of games but never kept a devlog before. I'll do my best to keep this thread updated with screenshots and builds. I don't expect the entire game to take more than a few <del>weeks</del> months to develop. <del>I'll probably edit that sentence out in a few months</del>. Any feedback is appreciated.<br><br><div align="center">______________________________________________________________________<br><br>There are updates throughout the thread, but I'll just put this here:<br><br><b><span style="font-size: 14pt; line-height: 1.3em;"><a href="http://dukope.com/#ppl" target="_blank">&gt;&gt; Get the Latest Build &lt;&lt;</a><br></span></b><br>(Currently in beta so missing some stuff)<br><br>______________________________________________________________________<br>
+</div>
+<br><div align="center">
+<span style="font-size: 12pt; line-height: 1.3em;"><b>Want your name in the game?</b></span><br><br>I'm including real names for the immigrants. Add yours here:<br><a href="http://dukope.com/usemyname" target="_blank"><br><img src="https://i.imgur.com/D6o4xdP.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>dukope.com/usemyname</b></span></a><br><br>______________________________________________________________________<br><br><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=138290904" target="_blank"><img src="https://i.imgur.com/Z3LYqil.png" alt="" border="0"><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Papers, Please on Steam Greenlight</b></span></a><br><br>Please vote!<br><br>______________________________________________________________________<br><br>
+</div>
+            </article>
+
+            <article class="blog-post" id="201211161118">
+              <h2 class="blog-post-title mb-1">2012 November 16</h2>
+              <p class="blog-post-meta">at 11:18</p>
+              <blockquote class="blockquote">Haha, nice concept. So the whole game will take place in one setting then?<br>
+</blockquote>
+<br>More or less, yeah. There will be some activity in the border checkpoint area at the top, but most of the focus will be in the booth.<br><br>If the inspection gameplay works out ok, I'm also thinking of incorporating the contrary mode where you work as a smuggler/spy-chief/terrorist-leader for the enemy state. You'd be assigned tasks ("smuggle 20kg of bullets"), recruit agents to pass through the border, set them up with fake documents, hide contraband on their body (you know where), and send them through the checkpoint. I guess that would take place in a different setting.<br><br>A possible extension of that is to have player-created smugglers in the pool of travelers passing through player-controlled inspectors. And THAT... might make a half-decent play-by-day multiplayer game.<br>
+            </article>
+
+            <article class="blog-post" id="201211180841">
+              <h2 class="blog-post-title mb-1">2012 November 18</h2>
+              <p class="blog-post-meta">at 08:41</p>
+              <blockquote class="blockquote">This looks really good and reminded me a lot of the original prince of persia's characters' running sequence. Are you using rotoscopy as well?<br>
+</blockquote>
+<br>Hah, thanks! No rotoscoping, I just drew those frames by hand. With so few pixels it's pretty easy to iterate on. Now that you mention it though, rotoscopy is exactly the look I'm going for.  I kept thinking "natural" animation but what I want is that classic low-res rotoscoping feel. I'm glad you mentioned this cuz now I know what better to aim for <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><blockquote class="blockquote">If your resolution is not set in stone...I hope you don't mind me editing it's just that I've wrestled with limited screenspace a lot.<br>
+</blockquote>
+<br>I was thinking it best to stick to 16:9, but after seeing your mockup I'm not so sure anymore. 3:2 gives a lot more room to work with. I probably don't know enough about what kinds of documents the game will include to decide right now but I'm gonna experiment with 960x640 as you suggest. Thank you for the ideas! I absolutely don't mind you editing the mockup and I really appreciate the help.<br><br>Btw, this is exactly the kind of challenge I enjoy. I'll take a limited resolution, palette, or game mechanic over unlimited freedom any day. Given Pioneers resolution and (awesome) palette, I'll bet you're the same way <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0">
+            </article>
+
+            <article class="blog-post" id="201211190443">
+              <h2 class="blog-post-title mb-1">2012 November 19</h2>
+              <p class="blog-post-meta">at 04:43</p>
+              <blockquote class="blockquote">This looks awesome! I really liked The Republica Times, looking forward to seeing this develop.<br>
+</blockquote>
+<br>Thanks spolvid. This game will probably have a similar flavor so I hope you enjoy it too.<br><br>Slightly updated layout with taller resolution:<br><img src="https://i.imgur.com/aS4gS.png" alt="" border="0"><br><br>Eigen's suggestion prompted me to keep experimenting with the mockup. With a 3:2 aspect, there's room to rearrange the inspection booth a bit and give the doc inspection area more space. Each document can be maximum 150x215 and 2 documents can be visible at any time. Teletex query results, the audio transcript, and the rule book will behave just like documents. This'll be nice for consistency and having the docs side-by-side makes it easier to find and highlight discrepancies. 150x215 is not a lot of space but my feeling is that the docs shouldn't be too complicated so hopefully it works out.<br><br>Closeup:<br><img src="https://i.imgur.com/vqdTc.png" alt="" border="0"><br><br>From left to right there's a clock, scale readout, microphone, computer screen, and notebook. Not sure what to do with the clock just yet but there'll probably be some time component to the gameplay. Scale shows the person's weight, mic will show the audio transcript document when clicked, computer screen will show the teletex document when clicked, and the notebook will show the rule book when clicked. <br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Rule Book</b></span><br>In order to establish the baseline regulations for which documents and information a traveler must have to enter, there's a rule book. This lists things like "Traveler must have an entry permit", "Traveler must be over 18", etc. If a rule is being broken, it can be highlighted for further options. One example would be the "Traveler must be over 18" rule. If you inspect their passport and calculate their age to be &lt; 18, you can select both their passport birthdate and the age rule. This will highlight the discrepancy and open up a teletex query or a question you can ask the traveler.
+            </article>
+
+            <article class="blog-post" id="201211221134">
+              <h2 class="blog-post-title mb-1">2012 November 22</h2>
+              <p class="blog-post-meta">at 11:34</p>
+              Thanks for the feedback everyone!<br><br><blockquote class="blockquote">* What if I allow everyone into the country? Are there any penalties for doing that? If so, what are they.<br>* What happens if I don't allow anyone into the country? I mean a total blockade.<br>* As the player, what is the end goal? I mean, at what point is the game considered completed.<br>
+</blockquote>
+<br>I think the gameplay will probably be divided into days with daily quotas. I'd say your goal is to process people as quickly as possible and not make any mistakes. There'll be a proper narrative and story arc to tie the days together. The low level day-to-day stuff is random within parameters; the story is scripted.<br><br>If you don't let anyone through, you'd probably get fired after a few days. If you let everyone through, you'll be responsible for spy/terrorist/smuggler activity. I'm thinking to show performance reports at the end of each day to let you know how you're doing. Some results will be more immediate. For example, a terrorist suicide bomber may detonate onscreen immediately after he passes through your booth. Bad lookin out.<br><br><blockquote class="blockquote">It would also be interesting if the player has to decide whether the picture on the passport is of the same person as the one standing in line. <br>For even more complexity make the passport picture always appear younger and with a different haircut.<br>
+</blockquote>
+<br>Actually this is exactly what I'm planning. Even with the mockup I found it fun to dart my eyes back and forth at the passport photo and the dude's face. Same person? Possibly... A proper immigration inspector maintains a suspecting, skeptical eye. Changing up the photos with different glasses/hats/clothes/age should keep it interesting. Which leads nicely to...<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Wanted Criminals</b></span><br>The computer terminal, when inspected, will display multiple screens that you can flip between. One of these screens will contain a photo list of known spies/terrorists/criminals/smugglers. As you vet each person, don't forget to compare their face against the current bulletin photos. If you find a match, highlight their face and the photo to reveal an "arrest this punk" option.<br><br>Some kind of "urgent bulletin" system built on this could create pretty cool Bourne moments too. You may get an urgent bulletin and expect the criminal to show up (in disguise) within the next few minutes or not at all.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Forged Documents</b></span><br>Along with a list of basic regulations, the rule book will also contain samples of many common documents and passport covers from all surrounding countries. It'll be up to you to cross reference these samples to make sure the traveler's documents aren't forgeries. What I like about this is that after a few days, you'll have memorized how the most common docs should look and won't need to waste precious time referencing the rule book.
+            </article>
+
+            <article class="blog-post" id="201211240742">
+              <h2 class="blog-post-title mb-1">2012 November 24</h2>
+              <p class="blog-post-meta">at 07:42</p>
+              <blockquote class="blockquote">I also threw some documents around, and I personally dont like how the documents move out from "under the desk view" to the open area. Maybe you could do it so that you can drag the closed document to the open area and if you release it there, it opens up?? Meanwhile, I`m really looking forward to this game.<br>
+</blockquote>
+<br>Well damn. That's one of the things I was quite happy with. You don't have to drop the document first before seeing it on the desk. Makes quicklooks easy and enables placing it right the first time if you decide to inspect it. I thought it was kinda cool how it dragged straight across but I concede now that maybe it's a little weird.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>You Look Honest</b></span><br>New build:<br><a href="http://pope.jeffsys.net/play.php?g=ppl" target="_blank"><img src="https://i.imgur.com/VjkVe.png" alt="" border="0"></a><br><br>I've added initial versions of the rulebook, audio transcript, and telex dispatch. I've also hard-coded a traveler so you can poke around in his documents a bit. There's nothing to do except that actually. Haven't gotten to the part where you approve/deny his entry.<br><br>This is early days so it's all very rough. There's no story, interesting accouterments, or fun. A lot of stuff is incomplete and confusing which I realize is a bad introduction to the mechanics. The final version will build up gradually and introduce these concepts with glorious clarity. For now, study the rulebook first.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Challenge!</b></span><br>The traveler in this build has 4 errors in his documents. The first person to find and post them here will get a free copy of the game when it's released! Please use a tiny font to avoid spoilers.
+            </article>
+
+            <article class="blog-post" id="201211240830">
+              <h2 class="blog-post-title mb-1">2012 November 24</h2>
+              <p class="blog-post-meta">at 08:30</p>
+              <blockquote class="blockquote">The correct answer<br>
+</blockquote>
+<br>Aaaaaaaaand DONE.<br><br>Nice work Panurge! Fast and precise. I think there may be a spot for you in the Ministry.
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2012December">
+            2012 December...
+          </h3>
+
+
+            <article class="blog-post" id="201212030735">
+              <h2 class="blog-post-title mb-1">2012 December 03</h2>
+              <p class="blog-post-meta">at 07:35</p>
+              Thanks for the encouragement everyone!<br><br><blockquote class="blockquote">Just for funsies: <br><iframe width="640" height="385" src="//www.youtube.com/embed/_S2wWVGprMQ?fs=1&amp;start=" frameborder="0" allowfullscreen></iframe><br><br>
+</blockquote>
+<br>Haha. "If in doubt, keep em out." Indeed.<br><br>Played around with some basic animations for walking up to/away from the booth. It's just 2D fakery so I have to black the character out during the movement. Gonna try to explain that with some lights-off/lights-on effect.<br><br><img src="https://i.imgur.com/Qvbwd.gif" alt="" border="0"><br><img src="https://i.imgur.com/aA2Bl.gif" alt="" border="0"><br><br>The colors went pretty shit with my [screencap -&gt; .mov -&gt; frames -&gt; .gif] capturing technique. Next time I'll write frames directly from the game.
+            </article>
+
+            <article class="blog-post" id="201212050307">
+              <h2 class="blog-post-title mb-1">2012 December 05</h2>
+              <p class="blog-post-meta">at 03:07</p>
+              <blockquote class="blockquote">How would it look if they faded in after the shutter opened?<br>(reasoning behind this being that they walk up to the shutter after it's open)<br>
+</blockquote>
+<br>Well the shutter is a means to explain the shadowing. Doesn't help with that if they fade in separately.<br><br><blockquote class="blockquote">If the shutter stays, could you possibly try to make it so that people seem annoyed or frustrated when you shut the shutter on them?<br>Maybe even bang on the shutter some?<br>
+</blockquote>
+<br>That's an awesome idea and a great reason to keep them. I can add a hand banging against the shutter if you take too long to open it or close it without giving them their documents back.<br><br><blockquote class="blockquote">Also...These look mostly right and all but I think I see two other things wrong:<br><span style="font-size: 2pt; line-height: 1.3em;">-His passport expired three years ago<br>-He's supposedly only about 6 months old according to the DoB<br></span><br>
+</blockquote>
+<br>The date format is 'year.month.day'. I'll have to make that somehow more clear in the game.<br><br><blockquote class="blockquote">You could have the shutters slam shut when someone tries to make a run for it, might add a little to the feeling of danger.<br>
+</blockquote>
+<br>Heh. Another good idea. I was also thinking it'd be cool to have someone pull a gun on you in the booth if you deny their entry. Closing the shutters quickly would be a way to save yourself.
+            </article>
+
+            <article class="blog-post" id="201212081935">
+              <h2 class="blog-post-title mb-1">2012 December 08</h2>
+              <p class="blog-post-meta">at 19:35</p>
+              <b>@makerimages</b>: Coupla days still.<br><br><b>@FinalSin</b> &amp; <b>Gimmy TILBERT</b>: Super thanks!<br><br><blockquote class="blockquote">Suggestions of things that could happen (dunno if any of these have been made)...<br>
+</blockquote>
+<br>These are all good ideas.<br><br><blockquote class="blockquote">I don't know if this has been addressed already, but what's to stop someone from just pressing on every single combination of information until they find something?<br>
+</blockquote>
+<br>Nothing except the inefficiency of it. On those traveling light (traveler with passport, entry permit, responses, appearance, and your rulebook) there are about 35 unique pieces of information. That's almost 600 unique fact pairs so it's gonna take some time to even click them all. And since not all facts are visible at once you'd need to periodically rearrange the documents. <br><br>Much easier to just scan the documents visually and highlight where you think there's an error.
+            </article>
+
+            <article class="blog-post" id="201212150431">
+              <h2 class="blog-post-title mb-1">2012 December 15</h2>
+              <p class="blog-post-meta">at 04:31</p>
+              <blockquote class="blockquote">I can still use it though, and how do I send someone without a pass and entry. Also any way to know if I did right or wrong? On top of that right before I saw documents of a guy I slammed it shut and it's stuck, can't get anyone new or something<br>
+</blockquote>
+<br>Just fixed the invisible stamp still working. Thanks for the info. As makerimages says, if they're missing all documents, highlight the counter and the rule and they'll walk out.<br><br>Reload the page if it's stuck for now. I'll look into a proper fix.
+            </article>
+
+            <article class="blog-post" id="201212150447">
+              <h2 class="blog-post-title mb-1">2012 December 15</h2>
+              <p class="blog-post-meta">at 04:47</p>
+              <blockquote class="blockquote">Why do I have to click on the names in the passport and permit to highlight the disperancy if I can clearly see the difference in names and could stamp "Denied" right away?<br>
+</blockquote>
+<br>Just some artificial gating since there's no other reason to highlight yet. In the end, the denied stamp will always be available and highlighting errors will allow further actions like in one of the animated gifs I posted.<br><br>I agree it definitely needs some audio. I probably won't get to that until some of the other mechanics are worked out though.
+            </article>
+
+            <article class="blog-post" id="201212170747">
+              <h2 class="blog-post-title mb-1">2012 December 17</h2>
+              <p class="blog-post-meta">at 07:47</p>
+              <blockquote class="blockquote">Really cool game, it was fun and addictive from what I played.  Using the huge stamp felt so cool, and I liked how you could stamp the passport as many times as you want just for fun.<br>
+</blockquote>
+<br>Thanks. There's not enough stamping in games.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Speech Bub</b></span><br>A simple speech bubble for conversing with the <del>victim</del> applicant.<br><img src="https://i.imgur.com/6xqT7.gif" alt="" border="0"><br><br>At the moment I'm working on the stuff that happens after you highlight a discrepancy. Each type of error will lead to a short dialog interaction and in some cases the option to search their body or send a telex. <br><br>It may also prompt the applicant to submit more documents. For instance, if they don't have an entry permit and you ask them about it, they could say something like "Whoops, here it is." and put it on the counter.<br><br>For this dialog system I'm going to try to categorize responses into different "personalities" which would enable applicants to be dickheads, sympathetic, indifferent etc.<br><br><b><span style="font-size: 12pt; line-height: 1.3em;">Tracking Performance</span></b><br>One issue I haven't gotten to yet is how to show player performance. If the game is broken into days, there should be some stat thing that shows at the end of each day. I was recently thinking it might be cool to have this be a sort of flash-forward "Where are they now" summary for each traveler you dealt with.<br><br>As an example, if you let a smuggler through in error, it would give a small report like "[PICTURE] Anton Sarvoy: Arrested for smuggling. Detained and executed". Or hopefully it's something more positive. If you had mercy on someone with poor documentation: "[PICTURE] Alice Mitchells: Reunited with son. Gainfully employed." So these blurbs are from the far future, not just the next day. Might be kinda weird in that sense.<br><br><b><span style="font-size: 12pt; line-height: 1.3em;">On the other hand</span></b><br>I think some of an immigration inspector's anxiety comes from not knowing what happens to the immigrants they process every day. In <i>Papers Please</i> there will be immediately visible consequences in some cases (terrorist bomber). But in other cases the person will just pass through and you won't know what happened until the stats screen at the end of each day. Not sure if I want to try to capture that sense of not-knowing and show only minimal stats or treat it more like a game with detailed information on each immigrant.<br>
+            </article>
+
+            <article class="blog-post" id="201212172232">
+              <h2 class="blog-post-title mb-1">2012 December 17</h2>
+              <p class="blog-post-meta">at 22:32</p>
+              <blockquote class="blockquote">...<br>For example, you may receive a notice warning you that a particular immigrant you let through the previous day was later arrested trying to buy arms on the black market and discrepancies were noted in his documentation. Maybe after so many written warnings you would face a disciplinary hearing.<br>On the other hand, you might receive a thank-you letter and a jar of pickled turnip from the poor grandmother you let through to join her family.<br>
+</blockquote>
+<br>This is perfect; way better than a stats screen. Definitely gonna do this. Thank you for the great idea, Panurge!<br><br><b><span style="font-size: 12pt; line-height: 1.3em;">Letters</span></b><br><img src="https://i.imgur.com/Y6gl8.png" alt="" border="0"><br>Each morning there'll be a stack of letters on the counter. Before calling the first applicant of the day you'll be able to look through them using the same drag+drop interface. They might be updates from the Ministry, reprimands, thank you notes from approved applicants, hate mail from denied applicants or....<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Bribes</b></span><br><img src="https://i.imgur.com/n1FEA.png" alt="" border="0"><br>I'm keen to have some form of bribery in the game. Maybe your "score" will actually be your money. Some less-than-honest applicants can offer you money up front, or the promise to mail cash to you later in exchange for a quick approval. This'll give you some non-altrusitic incentive to let the bad ones through.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Progression</b></span><br>The money system could also nicely tie in to the overall progression. Let's say you receive a daily salary from the Ministry based on performance. Each day you lose a little money due to living expenses. Your current income represents your wealth bracket, of which there are several. The story and game progresses as you move up the brackets.
+            </article>
+
+            <article class="blog-post" id="201212300351">
+              <h2 class="blog-post-title mb-1">2012 December 30</h2>
+              <p class="blog-post-meta">at 03:51</p>
+              Thanks for the feedback everyone.<br><br><blockquote class="blockquote">And a lady is missing her entry permit, but the game is telling me no correlation. Hmph. (Oh, her passport was expired too.)<br>
+</blockquote>
+<br>No correlation between which things? For a missing entry permit (for non-Arstotzkans only), you have to highlight the rule and the counter top. I'll fix the other stuff you mentioned. In the next build you'll be able to click the "Passport ISS field must be valid" to correlate with a wrong city.<br><br><blockquote class="blockquote">I believe that further in the development you should add document forgery errors (different typefaces, wrong paper etc.)<br>
+</blockquote>
+<br>I experimented with this but decided these sorts of changes are too subtle. Instead, documents will have official seals that may be forged incorrectly.<br><br><blockquote class="blockquote">How about marking discrepancies with a right click, that would get rid of the need for extra inspection mode.<br>
+</blockquote>
+<br>I can do the right-click shortcut for native builds, but not flash. Maybe I'll have the space key toggle inspection mode to make it a little faster.<br><br><blockquote class="blockquote">Some thoughts on the rule book. The corner to flip pages could be bigger, as big as possible in my opinion. There is a ribbon on the top left, this seems to be a browser-like "go back" function. It feels a bit strange to have in a book. I think it would be nicer (and more like an actual bookmark) to always be able to quickly get to the contents.<br>
+</blockquote>
+<br>You shouldn't have to flip pages too much but I agree the corner could be bigger. I made the bookmark more like a browser thinking it would be more convenient but I think you're right. I usually just end up clicking it a bunch to get back to the TOC anyways. I'll change it to just go to page one.
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2013January">
+            2013 January...
+          </h3>
+
+
+            <article class="blog-post" id="201301060539">
+              <h2 class="blog-post-title mb-1">2013 January 06</h2>
+              <p class="blog-post-meta">at 05:39</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Revised Fingerprint System</b></span><br><br><img src="https://i.imgur.com/I5ePl.gif" alt="" border="0"><br><br>The top sheet is collected from the applicant in the booth. The bottom identity record is printed out based on their passport name. Multiple records may exist for the same name and each record may include an alias. This can be used to verify discrepant names on the different documents.
+            </article>
+
+            <article class="blog-post" id="201301091935">
+              <h2 class="blog-post-title mb-1">2013 January 09</h2>
+              <p class="blog-post-meta">at 19:35</p>
+              <br><blockquote class="blockquote">What if ...<br>
+</blockquote>
+<br>I appreciate the detailed suggestion but there's a couple reasons why I don't think this is best.<br><br>I hate work as much as the next guy but in this case I'm not just being lazy <img src="https://forums.tigsource.com/Smileys/derek/grin.gif" alt="Grin" border="0">. I intentionally designed this part of the game to be stark and simple. Basically, I want to add another facet to the primary (daytime) gameplay without too much distraction for the player.<br><br>My plan is to expand on a similar technique I used in Republia Times. In that case there was only a single sentence about the family each day but it served to humanize the player and make their daily decisions more difficult. I want to take that same effect and give it more weight. Not by defining the family more, but by providing more fine-grained influence over their wellbeing.<br><br>Although a single night screen from one day looks pretty stark, your family's status will change and progress throughout the game. If your uncle is sick too long without medicine he'll die. Or his medicine costs will go up each day. Or maybe your son's birthday is coming up and he wants a new toy. Skip your uncle's medicine for a day and you can afford the toy. Or, as you mention, a new apartment with lower rent/heating costs is available for a fee. The choices you make on this screen will have lasting effects and you'll need to be careful about how you spend your money.<br><br>About the hints from family members, there will be plenty of story and flavor elements coming from the immigrants themselves. I prefer to keep that stuff wed closely to the daily gameplay as opposed to putting it in the separate night screens.<br><br>Having said all that business, I'm not completely against more involved nightly updates. At this point I'm moving forward with this simple implementation. Later down the line it may become clear that something more complicated would benefit the game.
+            </article>
+
+            <article class="blog-post" id="201301160147">
+              <h2 class="blog-post-title mb-1">2013 January 16</h2>
+              <p class="blog-post-meta">at 01:47</p>
+              <blockquote class="blockquote">The music is amazing as well, what program did you use to create it?<br>
+</blockquote>
+<br>Thank you. I composed the music on a Yamaha MOX6 keyboard. It has a full sequencer with effects and stuff so I only needed to grab the audio output using Audacity on my mac.<br><br><blockquote class="blockquote">I only have a very small suggestion. I think the logo should start apprearing on the third beat not the second one, let the first two sound to an empty screen.<br>
+</blockquote>
+<br>Roger that; will do.
+            </article>
+
+            <article class="blog-post" id="201301190509">
+              <h2 class="blog-post-title mb-1">2013 January 19</h2>
+              <p class="blog-post-meta">at 05:09</p>
+              Random stuff that's changed/updated recently:<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Speech Chat</b></span><br><img src="https://i.imgur.com/9pUI9k6.gif" alt="" border="0"><br>I initially had solitary speech bubbles (visible upthread) that pop up for the dialog. The little back-and-forth at the beginning ended up being too slow and stunted with those bubbles so I changed it to more of a scrolling chat window. Flows much better although I'm not crazy about overlapping the face.<br><br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Goodbye Telex</b></span><br>In that pic you can also see that the Telex is gone from the console. I couldn't find a good use for it after adding the fingerprint system. In its place is the daily bulletin which you can reference at any time.<br><br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Daily Bulletin</b></span><br><img src="https://i.imgur.com/4EAyiXR.png" alt="" border="0"><br>First bulletin in the game. These are waiting on your desk at the start of each day. Later bulletins will contain mugshots of wanted people. The Telex was going to have those but I think it fits better here.<br><br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Dialog</b></span><br>I've been writing a bunch of the generic question and response dialog recently. Initially I authored it to flow naturally with proper English grammar but the game lost much of its Eastern-European feel. Now I'm trying rougher, less fluent English and it's a little better:<br><br><span style="color: purple;"><i>"I'll stay for three months."</i></span> becomes <span style="color: purple;"><i>"I stay three months."</i></span><br><br>Pretty subtle but I was surprised at how the fluent English destroyed some of the mood. I hope this works better.<br><br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Action Buttons</b></span><br><img src="https://i.imgur.com/eBAtr5v.gif" alt="" border="0"><br>These buttons will appear as the result of an interrogation. After highlighting an error in inspection mode only one option is available: Interrogate. Based on the entrant's response, one or more of these action buttons will appear. They'll stay in place until you click them or move on to the next entrant.<br><br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Giving Back</b></span><br><img src="https://i.imgur.com/P1IosNZ.gif" alt="" border="0"><br>Instead of just returning all the docs to the counter you now have to explicitly give them back. This'll allow confiscations and document trades later down the line.
+            </article>
+
+            <article class="blog-post" id="201301230647">
+              <h2 class="blog-post-title mb-1">2013 January 23</h2>
+              <p class="blog-post-meta">at 06:47</p>
+              A picture worth 8 words. Should work for the whole intro.<br><br><img src="https://i.imgur.com/3Bu5RQw.png" alt="" border="0"><br><br>Not sure I can capture it better with a proper image tbh.
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2013February">
+            2013 February...
+          </h3>
+
+
+            <article class="blog-post" id="201302011811">
+              <h2 class="blog-post-title mb-1">2013 February 01</h2>
+              <p class="blog-post-meta">at 18:11</p>
+              <blockquote class="blockquote">I've been meaning to gush about how much I love the idea and execution of this game, everything supports the atmosphere so well I'm freaking out oh my god.  You should call it Pampers, Please because it's so awesome that the first build I played made me do literally every bathroom thing in my pants.  I especially love the Where in the Dystopia is Carmen Sandiego vibe it exudes, you rule.<br>
+</blockquote>
+<br>Thanks roc. YOU rule.<br><br><blockquote class="blockquote">This is pretty cool! It's a lot of information to take in at once, but with a bit of clicking and reading it starts to make sense. I like figuring out games, but I could see some people getting fed up pretty quick. <br>One thing that is missing for me is the emotional aspect of the job.<br>
+</blockquote>
+<br>Thank you. I'm aiming to introduce the concepts more gradually and add more emotional impact through dialog.<br><br><blockquote class="blockquote">Really enjoying the build, though I keep hoping for a legitimate person to come along. <img src="https://forums.tigsource.com/Smileys/derek/concernedblinkie.gif" alt="Concerned" border="0"><br>
+</blockquote>
+<br>Cool. I've been playing with this balance recently. On the one hand I want enough mistakes to make a proper game. To be more realistic and keep you on your toes though there should be a good number of people who have no errors.<br><br><hr>New build coming up shortly. Will be native Windows and Mac builds this time since it's getting too big for Flash. Probably breaking all kinds of stuff.
+            </article>
+
+            <article class="blog-post" id="201302020021">
+              <h2 class="blog-post-title mb-1">2013 February 02</h2>
+              <p class="blog-post-meta">at 00:21</p>
+              <blockquote class="blockquote">Post Download: I can sleep happily tonight. By far the most interesting game I've played in quite a while, and it just gets better and better. <br>
+</blockquote>
+<br>Thanks randomshade! You had me a little worried with your enthusiasm <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0">. I can't say for sure if the game is any good at this stage so I'm relieved to hear you like it.<br><br><blockquote class="blockquote">I noticed that, at the end of the day, when the clock went dark, on the first day, it only let me finish working with the immigrant that I was already working with. On the second day, it let 3 more through before ending the day. Confused me quite a bit.<br>
+</blockquote>
+<br>There's a minimum number of people you have to process for each day. If the clock ends before this, you still need to finish out the remaining entrants (sans pay). I set it up like this so that story-critical entrants can be scripted per day and will match up with the daily bulletins. I'll try to explain this quota system in an early bulletin.
+            </article>
+
+            <article class="blog-post" id="201302030141">
+              <h2 class="blog-post-title mb-1">2013 February 03</h2>
+              <p class="blog-post-meta">at 01:41</p>
+              Thanks all for the new build feedback.<br><br><blockquote class="blockquote">Only odd thing in game I've noticed that hasn't been mentioned already (that I'm aware of) is that the Denied and Approve stamps now have a date on them which does not increment as the days go by.  I assume you've got plans for that though.<br>
+</blockquote>
+<blockquote class="blockquote">On another playthrough, I realized that neither the kg meter nor the detain button work yet. Is that intentional?<br>
+</blockquote>
+<br>Good eyes. Both of these are just not implemented yet and should fall into later builds.<br><br><blockquote class="blockquote">I got 7? warnings during the playthrough and for most of them I had no idea what was missing/wrong. I double-checked everything.<br>
+</blockquote>
+<br>I was wondering if the warning should mention the exact mistake. I assumed it wouldn't help much since by the time you get the warning the entrant is gone and you can't check their papers anymore. But both you and Armageddon have mentioned it so I'll experiment.<br><br><blockquote class="blockquote">Another problem was that when sometimes there was multiple disparencies, it only let me highlight one of them.<br>
+</blockquote>
+<br>Can you give me more info about this? The inspect mode should let you highlight any two pieces of information. Did you highlight two clearly discrepant pieces of info and it didn't show the Interrogate button?
+            </article>
+
+            <article class="blog-post" id="201302030206">
+              <h2 class="blog-post-title mb-1">2013 February 03</h2>
+              <p class="blog-post-meta">at 02:06</p>
+              <blockquote class="blockquote">Speaking from experience, in my last playthrough, I got 4 warnings <i>on the first day</i>. I had no idea what I did wrong. For the most part, on the first day, I thought I was supposed to approve pretty much everyone since I couldn't highlight discrepancies.<br>So, even if not exact, more info would be greatly appreciated.<br>
+</blockquote>
+<br>Hehe ok that's good to know. This is a little scary though because the first bulletin states matter-of-factly that you should only permit Arstotzkan citizens to enter due to a security alert. Did you read the bulletin when playing?<br><br>In retrospect, people will probably miss important bulletin info no matter what so a detailed warning report seems necessary.
+            </article>
+
+            <article class="blog-post" id="201302060221">
+              <h2 class="blog-post-title mb-1">2013 February 06</h2>
+              <p class="blog-post-meta">at 02:21</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>@ IAmSerge</b></span><br>Thank you. You can grab the theme song from "assets/music/Theme.mp3" in the windows zip, or rip it from youtube: <br><iframe width="640" height="385" src="//www.youtube.com/embed/OBQE_TNI7zw?fs=1&amp;start=" frameborder="0" allowfullscreen></iframe><br> . The C++ engine is a collection of stuff I've built on and developed over the last 10 years or so. It sits atop SDL for multi-plat support and has the usual OpenGL engine features like scenes, audio, ui, etc. I like it a lot, but I think my days of maintaing custom engines are over so I chose Haxe/NME for this project.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>@ sk2k</b></span><br>Old computers are the best computers.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>@ Eigen</b></span><br>Thanks for having your girl check it out. A perspective like that is really helpful. The difficulty will scale up beyond the first few days but I'm definitely worried about getting that scaling right. One person's interminably slow is another's blinding fast. Maybe a difficulty setting is best. The game currently has the partial name errors she suggested, but not partial id number errors. I'll change it so only single digits can be off later on. Ditto with the seals. There's a library of slightly-off seals that come up randomly. When the game gets longer there'll be more chances to see these. About the passport expiration. Not sure what to do about that. I'll either not bring it up, or programmatically ensure that all passport expirations extend beyond the stay.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>@ Baobab</b></span><br>Hehe. I think manually dragging the stamp down at the right speed would be cool at first and annoying later. I'm currently adding sound effects to the game, including a satisfying "THUNK" for the stamp, so hopefully you'll like the feel better.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>@ wmcduff</b></span><br>My big fear is that ramping up too slowly results in players losing interest. <i>Helsing's Fire</i> had this problem and I still kinda regret the shallow difficulty curve there. For this game, I'm now hoping that by pointing out the specific errors on the warning slips, players can get up to speed faster.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>@ corpocracy</b></span><br>Wow thank you for the long comments. About dialog trees, I'm sorry to say that I probably won't go there. From a development perspective, I don't like to write much dialog. And from a gamer perspective, I don't like to read much dialog. I think the game works better by making the motions more mechanical and less like a traditional dialog tree. At least it enhances the bureaucratic feel for me. I do like the idea about requesting a bribe though. I could fit that in with a drop-down button like the fingerprinting. The idea about the newspapers is also a good one. I've kinda rolled that idea around in my head for awhile. The newspaper headlines format is a great way to update the player without much reading. And finally, you're right about the passports. I'll definitely make them more varied since one of the main things people miss is the entrant's nationality. Not sure about color-coding their clothes but that's not outside consideration. <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><br>Thanks everybody for the comments and suggestions.
+            </article>
+
+            <article class="blog-post" id="201302110548">
+              <h2 class="blog-post-title mb-1">2013 February 11</h2>
+              <p class="blog-post-meta">at 05:48</p>
+              <blockquote class="blockquote">I didn't like the stamping thingy; I feel as if a simpler, manually-operated, hand-fitting stamp tool would be better: Drag either stamp tool on the visa. Click it to stamp down.<br>
+</blockquote>
+<br>I talked about this earlier in the thread. A drag-n-drop stamp would require applying the stamp when releasing the mouse button, which doesn't feel as good as stamping on button down as the stamp bar allows.<br><br><blockquote class="blockquote">It's slightly annoying when you violate procedure, the warning prints, but I can't seem to dispose of it! So it just stays there on the desk. I suppose it's an effective reminder, but... feels cluttery.<br>
+</blockquote>
+<br>Actually I quite like this. It's an incentive to avoid warnings beyond the monetary penalty. You can always throw it onto the far left of the counter to get it mostly out of the way.<br><br>I'll try to hook up the bulletin date for correlations. And I'll also see if I can enable calling next before the current guy completely leaves. Shouldn't be too hard. Thanks for the comments.<br><br><hr>
+<br><span style="font-size: 14pt; line-height: 1.3em;"><b>Confiscating Documents</b></span><br>Just finished the confiscation system:<br><img src="https://i.imgur.com/LV9hhZl.gif" alt="" border="0"><br><br>At some point in the game, you'll be required to confiscate certain documents. The drawer at the bottom can be opened to receive these documents. As part of the larger story, some entrants may offer money for a particular person's passport from the confiscation drawer...<br>
+            </article>
+
+            <article class="blog-post" id="201302120607">
+              <h2 class="blog-post-title mb-1">2013 February 12</h2>
+              <p class="blog-post-meta">at 06:07</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Almost Made It</b></span><br><img src="https://i.imgur.com/KSg7pXr.gif" alt="" border="0"><br>
+            </article>
+
+            <article class="blog-post" id="201302132324">
+              <h2 class="blog-post-title mb-1">2013 February 13</h2>
+              <p class="blog-post-meta">at 23:24</p>
+              <b><span style="font-size: 12pt; line-height: 1.3em;">The Guards Will Deal With It</span></b><br><img src="https://i.imgur.com/McnPJfC.gif" alt="" border="0"><br><br><b><span style="font-size: 12pt; line-height: 1.3em;">Come With Us Please</span></b><br><img src="https://i.imgur.com/Bol6cex.gif" alt="" border="0">
+            </article>
+
+            <article class="blog-post" id="201302142149">
+              <h2 class="blog-post-title mb-1">2013 February 14</h2>
+              <p class="blog-post-meta">at 21:49</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>This Is Why We Can't Have Nice Things...</b></span><br>...like friendly border guards.<br><br><img src="https://i.imgur.com/TVtOtAE.gif" alt="" border="0"><br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Spriting Workflow</b></span><br>I've spent some time animating sprites now and thought to post the workflow I ended up with. The basic pipeline is to create/edit/animate the sprite frames and save/export them as individual numbered pngs. Then comes <a href="http://www.codeandweb.com/texturepacker" target="_blank">TexturePacker</a> to put all the frames in one sprite sheet which the game uses. I tried lots of different sprite animation programs. Everything was recommended by somebody but since I'm on a mac, I couldn't try Graphics Gale, which many say is the best. <br><br><b><a href="http://pixenapp.com" target="_blank">Pixen</a></b><br>Pixen is a native Mac app with all the bullet-pointed features. I animated the basic traveler idle, walk, and run anims in Pixen a few months ago. When I went back a few days ago to do the rest of the animations I quickly got frustrated. Biggest problem is the export process which requires too many clicks to save out the individual pngs. Although I remember Pixen having onion skinning, I couldn't find the toggle again and gave up before spending much effort on it.<br><br><b><a href="http://www.aseprite.org" target="_blank">ASEPRITE</a></b><br>This app is clunky as hell, especially on OSX. But after learning some shortcuts it got much easier and I made good progress in spite of the completely wonky mouse movement. The load/save process is really smooth and I created the traveler climb and guard walk+idle animations fairly quickly. The onion skinning is nice. Unfortunately, I started running into problems with the explosion. My initial test came out terrible; mostly due to the limited tools available.<br><br><b>Photoshop</b><br>Realizing I'd need something cushier for the explosion pixeling, I moved over to Photoshop. Best to make the drawing easier and deal with whatever painful export process there was afterwards. Photoshop's animation system is pretty nice and I felt completely at home with the tools and layers here. PS Extended has onion skinning but I ended up doing ok without it. For exporting, there's a built-in "Export Layers" script but it's absolute shit.  Instead, I ended up saving for web to an animated gif, then extracting the frames using ImageMagick.<br><br><b><a href="https://www.imagemagick.org/script/index.php" target="_blank">ImageMagick</a></b><br>ImageMagick is a set of command-line tools for editing images. The main tool is called "convert" and lets you do all kinds of cool stuff. I've been using ImageMagick more and more recently and it's really come in handy on this project. For example, to take an animated gif, replace the background color with transparency, and export the frames as 32-bit png:<br><div class="codeheader">Code:</div>
+<div class="code">convert -coalesce 'Boom.gif' -define png:format=png32 -channel rgba -fill none -draw "color 0,0 replace" border/Boom-%02d.png</div>Easy and fast.<br><br>Now that I've got the Photoshop workflow down, I'll probably stick with that for everything. In total, I spent around 6 hours yesterday on the explosion. I don't ever want to hand-pixel an explosion again. In-game, it's gone before you even notice it so I'm leaving it here for rubberneckage:<br><img src="https://i.imgur.com/UqaZ6tE.gif" alt="" border="0">
+            </article>
+
+            <article class="blog-post" id="201302151715">
+              <h2 class="blog-post-title mb-1">2013 February 15</h2>
+              <p class="blog-post-meta">at 17:15</p>
+              <blockquote class="blockquote">WOW, that's amazing. He moves a little bit too slowly to be shot by trained guards tho<br>
+</blockquote>
+<br>Thanks Quarry. I'll have them start shooting a little later so they don't look completely incompetent.
+            </article>
+
+            <article class="blog-post" id="201302230832">
+              <h2 class="blog-post-title mb-1">2013 February 23</h2>
+              <p class="blog-post-meta">at 08:32</p>
+              <blockquote class="blockquote">Have you thought about making the search skin color match the person? Seems odd they would be blue then tan...<br>
+</blockquote>
+<br>Maybe originally, but sepia colors for the photo felt natural once I implemented it. It's a b&amp;w photo with a yellowish tint so I think it's ok if the varying skin colors don't show through.
+            </article>
+
+            <article class="blog-post" id="201302270843">
+              <h2 class="blog-post-title mb-1">2013 February 27</h2>
+              <p class="blog-post-meta">at 08:43</p>
+              <blockquote class="blockquote">I think that actively including the option to tranq someone is better than the alternative of doing it yourself. However, you might consider having the option to have someone else lethally dispose of the jumper as your action sequence. That way it becomes a moral implication instead of action.<br>You could determine the lethality of jumpers based on the threat level of each day. A timed choice button press would act in a similar manner as using cross hairs to click on the runner, and stylistically it might fit into the game better. There's an interesting moral decision about pulling the trigger versus just being the guy who made the call.<br>
+</blockquote>
+<br>I read this a couple times but I'm sorry to say I can't understand what you're suggesting. It's possible to build more moral choices into this but honestly the whole thing takes like 5 seconds. It's basically: "Should I stop this guy myself or do nothing and let the guards do it/get killed... Hup, it's over."<br><br><blockquote class="blockquote">Actually having to pull a trigger might make the game a little too dark, and give the player a little more control over the situation than the theme of the game tends to suggest. <br>
+</blockquote>
+<br>Ok, this part I get and that's a good point that I'm thinking about now. Making it a tranquilizer instead of a bullet takes care of the darkness so I may do that. But having such an action sequence is important for variety. My only concern isn't just to pack as many moral conundrums as possible into one game. I also want it to be fun to play.
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2013March">
+            2013 March...
+          </h3>
+
+
+            <article class="blog-post" id="201303030454">
+              <h2 class="blog-post-title mb-1">2013 March 03</h2>
+              <p class="blog-post-meta">at 04:54</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Data Scripting</b></span><br>A few shots of the game's data scripts. 99% of the time I use XML for text-based data but I've branched out a little bit for this game. The amount of text data here has lead me to 2 alternatives: A simple indentation-based format and CSV exported from Numbers (exel for Mac).<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Days</b></span><br><div align="center"><img src="https://i.imgur.com/lWNxhye.png" alt="" border="0"></div>
+<br>This is the spreadsheet for all the per-day settings, traveler placement, news, rules, etc. Often you'll see spreadsheets like this with design logic and in this case I'm able to use the exported CSV data directly in the game. Working in a spreadsheet makes it much easier to follow and edit the progression. If this were XML I'd be constantly scrolling up and down to edit different sections. This kind of thing would probably be even easier with a custom tool but I decided that wasn't a good use of time for this project.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Travelers</b></span><br><div align="center"><img src="https://i.imgur.com/Jq1u87z.png" alt="" border="0"></div>
+<br>Travelers are specified in a simple tab indention format, which is parsed into a node tree by the game. Syntax highlighting is my fav so I've also made a .language file for Sublime Text 2 to color each indented line. Using this simple format I can script each traveler with as much or as little specification as necessary. So in one case I may just give one guy a little bit of custom dialog when he's rejected; Everything else would be filled in randomly by the game. In another case I can force every detail (face, name, dialog, nationality, errors, etc) to build story threads.
+            </article>
+
+            <article class="blog-post" id="201303060727">
+              <h2 class="blog-post-title mb-1">2013 March 06</h2>
+              <p class="blog-post-meta">at 07:27</p>
+              <blockquote class="blockquote">Is your intent for each day in the final game to be completely deterministic? That is, every game day, from day 1 through 50 or whatever, is mostly scripted as to what story events will occur, and the game has something resembling an "end"? If so, any plans for something akin to an "Endless Mode" that is a long string of mostly random days with the "income generation/family upkeep" metagame attached so that you can keep playing until you get bored/get fired/get shot as a conspirator?<br>
+</blockquote>
+<br>That's basically exactly right. At the moment I'm planning on ~30 days in the final story mode. There will be small branches for some of the story threads, most of the immigrants will have some random properties, and taking care of your family is not guaranteed. Under certain conditions you can still lose but on the whole this mode will be deterministic.<br><br>The endless mode is something I'm considering. It depends on how much work it is to set up. Right now I'm feeling it'd be pretty easy so the chances are good I guess.<br><br><blockquote class="blockquote">Everything looks great so far, by the way: I'm looking forward to the finished product! I've already picked out <br><iframe width="640" height="385" src="//www.youtube.com/embed/rv_SGePWxVU?fs=1&amp;start=" frameborder="0" allowfullscreen></iframe><br> for you. <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br>
+</blockquote>
+<br>Thanks! Great song.
+            </article>
+
+            <article class="blog-post" id="201303120659">
+              <h2 class="blog-post-title mb-1">2013 March 12</h2>
+              <p class="blog-post-meta">at 06:59</p>
+              <blockquote class="blockquote">I got one work permit with "until" date of a month after the day, and the person was staying for 12 months. The game didn't seem to have a problem with it.<br>
+</blockquote>
+<br>Sounds like a problem with a year wrap-around. I'll take a look, thanks.<br><br><blockquote class="blockquote">Suggestions:<br>* Add tabs to the guidebook (like <a href="http://image.shutterstock.com/display_pic_with_logo/499/499,1109384428,5/stock-photo-planner-organizer-tabs-176244.jpg" target="_blank">http://image.shutterstock.com/display_pic_with_logo/499/499,1109384428,5/stock-photo-planner-organizer-tabs-176244.jpg</a>).<br>* At least in the first two or three days, the penalty for wrongly admitting or refusing an entry should tell you straight-up what you missed.<br>* Maybe instead of a sniper rifle, clicking on a person on the top area just calls the attention of the guards to that person. If they're doing something stupid behind the border, they get taken away. If they're over the border, they're shot.<br>
+</blockquote>
+<br>Great idea about the tabs. It's too late for the beta build, but I can get that in the final. For now the game will always tell you exactly what you missed. Runners will only attempt to scale the wall if there are no guards on the left side. And I still feel the sniping is better as 1st person.
+            </article>
+
+            <article class="blog-post" id="201303130029">
+              <h2 class="blog-post-title mb-1">2013 March 13</h2>
+              <p class="blog-post-meta">at 00:29</p>
+              <blockquote class="blockquote">I didn't see this mentioned in the thread, but noticed a change between the old builds and the most recent: Only passports can be stamped in the 0.1.1 build, while all presented documents could be stamped in the prior builds.<br>
+</blockquote>
+<br>Stamping everything was fun, but I felt just too much busywork (fine line, I know). I could make it optional (only required on the passport), but then it's confusing and you'd end up stamping everything anyways. It's hard to communicate that "you can do this optional thing here, but you don't need to; whereas over here you need to do it."<br><br>In the end you'll be stamping so many passports, trust me that you'll be glad you don't need to stamp everything.<br><br><blockquote class="blockquote">Actually, that might be required. I tried the game last week after watching a video on it, and this happened:<br>No passport to stamp, so the game was over. If it is intended the passport might not be there, we need some way of denying them.<br>
+</blockquote>
+<br>If you correlate the missing document (highlight the "need passport" rule and the counter-top), you should get a visa slip:<br><br><img src="https://i.imgur.com/ZWPVR9Y.png" alt="" border="0"><br><br>..That'll let you deny them and move on.
+            </article>
+
+            <article class="blog-post" id="201303160451">
+              <h2 class="blog-post-title mb-1">2013 March 16</h2>
+              <p class="blog-post-meta">at 04:51</p>
+              <blockquote class="blockquote">Only thing I noticed that no one else seems to have posted: after taking my third penalty, the printout claimed I had been docked 10 credits, but I was only docked 5 credits in the end-of-day summary.<br>
+</blockquote>
+<br>Nice catch. You're the first person to notice, including me. Gotta fix that.<br><br><blockquote class="blockquote">I'd just like to say that your games are both amazing and inspirational, dukope. I played through The Republia Times and got a few laughs and some quick thinking done, was amazed at Mightier, and am going to buy Helsing's Fire for sure.<br>
+</blockquote>
+<br>Wow, thank you for the kind words! <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><blockquote class="blockquote">Also, I want to offer my services as a linguist-y person and design some languages for you.<br>
+</blockquote>
+<br>I'll keep this in mind but I don't foresee the need for anything quite like that in Papers Please. I appreciate the offer though.
+            </article>
+
+            <article class="blog-post" id="201303170731">
+              <h2 class="blog-post-title mb-1">2013 March 17</h2>
+              <p class="blog-post-meta">at 07:31</p>
+              <blockquote class="blockquote">For the game: Would a settings area be added? I'd like direct control over fullscreen instead of clicking a open in browser button, as well as controlling the volume. The music is good, but relatively loud. I assume the difficulty setting and nudity toggle would be in a setting area anyway.<br>
+</blockquote>
+<br>Yeah I'll get a settings page in there. At the moment, you can toggle fullscreen with ALT+ENTER (windows) or OPTION+RETURN (osx).<br><br><blockquote class="blockquote">Bug (?): You can toggle "rent" in the day end screen even without the checkbox. Just click on the amount. (it's a bit finicky about clicking, try hitting the red pixels exact) The name submission doesn't seem to work. I can't edit "YourName, Here" or sex.<br>
+</blockquote>
+<br>Hah, that would explain why someone was mentioning the "optional" rent. I intended to make it mandatory. Just found the bug and fixed it, thanks. To submit your name, you need to enter your email address and click the activation link that gets sent to you. You can't edit that text directly. Maybe I'll bake the text into the image to avoid confusion.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Passports</b></span><br><br>A while back I mentioned (and it was suggested) that the passports from different countries look too similar. As part of the general filling-out of assets in beta, I've added unique details to each passport style:<br><br><img src="https://i.imgur.com/Zr4IVWG.png" alt="" border="0"><br><br>They're all still pretty basic designs but hopefully it's now easier to differentiate the nationalities at a glance. Watch out for Kolechia's spears. Those things are sharp.<br>
+            </article>
+
+            <article class="blog-post" id="201303172132">
+              <h2 class="blog-post-title mb-1">2013 March 17</h2>
+              <p class="blog-post-meta">at 21:32</p>
+              Thanks very much for the detailed feedback Panurge!<br><br><blockquote class="blockquote">The key moment for me came on the second day when I found myself scrutinising a man's documents more carefully than usual just because he had brusquely told me that he was in a hurry. You can just wait, you bastard, I thought. Now that's immersion!<br>
+</blockquote>
+<br>I like that encounter because even though he (or she) is a dick, the docs are in order so you have to approve entry. I imagine there's a fair bit of those teeth-gritting moments for real immigration inspectors. I stamp the passport all crooked in those cases.<br><br><hr>
+<span style="color: limegreen;"><b>** SPOILERS IN FABULOUS GREEN **</b><br><br><b>If I remember correctly, the girl who asked for help actually gave me a brothel card on her way in. Given her story, she seemed unusually keen to advertise!</b><br><br>That card ties her into the other girls and the brothel story thread so I figured it was important to drop. I tried to make her seem less than enthusiastic about handing it over though.<br><br><b>I turned the brothel owner away without detaining him ... Perhaps this course could also be seen as helpful?</b><br><br>Other people have sorta mentioned this. I wanted this encounter to be a case where the player could "do more" than just denying entry.<br><br><b>My family died on about day 4 or 5...Did I miss something I should have been doing (I think I fed and heated them as best as I could)?</b><br><br>No, you didn't miss anything. The night-time family stuff is functionally implemented in beta, but it's not balanced yet. When I'm playing, I completely blast through each day with loads of money so it's hard to figure out what the average player will make. I'll get it tuned better before release.<br><br><b>A smuggler gave me a bribe for letting him through (which I actually did by accident). He told me it was 'as promised' but I don't think he had mentioned anything previously. I still pocketed it, of course!</b><br><br>Whoops! I can fix that so he only gives you the bribe after offering.<br><br><b>The citations troubled me a little because they seemed so omniscient....The citations do serve a useful purpose in letting players know where they have gone wrong when they are learning to play, however. Perhaps you could have an initial probationary period of a few days during which time someone will supervise everything you do?</b><br><br>Yeah the citations are something I decided are absolutely necessary for the gameplay aspect. Going back to the alpha, I find it really frustrating to not know exactly what I missed when getting cited. The immediate feedback also allows me to skip a lot of introductory tutorial text and let the player learn from their mistakes as they go. Story-wise the citations are a little thorny but I have plans to address that as well.<br><br><b>I couldn't work out if there was a time limit to each day.</b><br><br>There's both a time limit and a quota. You only get paid for applicants processed before 6PM, but all days have a minimum number you have to process. So the faster you are at approving/denying, the more money you'll make.<br><br><b>The 'interrogate' button seemed a little small and I missed it quite a few times when clicking. Could just be my problem, of course... I would have liked the countries to be listed in the handbook by alphabetical order, so that I didn't need to keep returning to the map.</b><br><br>I'll see if I can make that button a little bigger. Back when there were supposed to be more options it needed to fit exactly over the mic. But now it's the only thing there so I should be able to adjust it. I'll also change the country order in the rule book. I never flip pages (always go back to the map first), so the order is basically random at the moment.<br></span><hr>
+<br><blockquote class="blockquote">Ohh... the page says "Enter a working email address for a <b>confirmation link</b> to submit your name." (emphasis mine). The way most websites work is that you fill the form, then they send you an email with a link to <i>confirm</i> the information. Perhaps drop the "confirm" part from the instruction.</blockquote>
+<br>I just updated the page, baking the name into the image and rewording the text <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"><br><br><br><blockquote class="blockquote">Okay, my girlfriend and I both agree that the vectorized one looks really nice, especially in the first-person view. The hqx one also looks really nice but not quite as nice as the vectorized one.<br>
+</blockquote>
+<br>Ok, good to know. I'm now thinking about vectorizing just the faces separately and using hqx on the rest, with hand-tweaked fonts.<br><br>
+            </article>
+
+            <article class="blog-post" id="201303201956">
+              <h2 class="blog-post-title mb-1">2013 March 20</h2>
+              <p class="blog-post-meta">at 19:56</p>
+              <blockquote class="blockquote">2, 1 is 185 cm with his hair<br>
+</blockquote>
+<br>Heh, there's an xml file where I enter how high the hair goes above the head in order to calculate the height correctly. That guy's hair is the tallest at 18 pixels. True height = ~168cm.<br><br>Thanks Glic :D
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2013April">
+            2013 April...
+          </h3>
+
+
+            <article class="blog-post" id="201304022203">
+              <h2 class="blog-post-title mb-1">2013 April 02</h2>
+              <p class="blog-post-meta">at 22:03</p>
+              Back from GDC! Another great show this year. The big surprise for me was seeing my game, The Republia Times, mentioned in the <i>DIY Game Revolution</i> talk by Porpentine and Terry Cavanagh. I should probably quit now while I'm ahead.<br><br><blockquote class="blockquote">I have to say, given the time period you're hearkening back to, the pixelly version seems to evoke that feeling the best, even if it's actually better than what was possible at the time from what I remember/can research.<br>
+</blockquote>
+<br>Thought you had my back, arne!<br><br><blockquote class="blockquote">**Spoilerish**<br>Anyways, I just had a few clarification I wanted to make. When I played it seems like I completed a few "missions" and I got two token things. At first, I thought this was money and was thrilled. But when I got the EOD screen, I didn't know what to do with my new shiny things. I'm assuming the tokens are just a means to mark advancements, but I think this could be made more clear in the End of Day screen.<br>
+</blockquote>
+<br>I haven't fully worked out what to do with the tokens. I like that they're unmentioned and mostly hidden. They'll probably just stay as meaningless achievements but I'll try to add some explanation.<br><br><blockquote class="blockquote">Yeah keep the pixels, I do like the higher res font but, the pixels are better.<br>
+</blockquote>
+<br>Games that mix pixel resolutions make my eyes twitch. So, unfortunately, going with pixels means accepting the blocky font.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Pixels vs Vectors</b></span><br><br>When I say stupid stuff like "the general population prefers vectors", I'm really just talking about myself. To me, the look of the game is not dependent on the pixels, but on the clean shapes and colors. Cleaner = better IMO. Pixels are great but they introduce an unintended roughness. My ideal game is nothing but razor-sharp visuals.<br><br>BUT, after a week at GDC, considering everyone's input, and some more thought, I've decided to just stick with pixels for Papers Please. I guess the look has grown on me and I'm also not enamored with the vector alternatives. After all the game content is done I may re-evaluate the visuals but for now I'm happy with chunky pixels and low-res fonts.<br><br>Thanks to everybody (except traitor arne) for chiming in!
+            </article>
+
+            <article class="blog-post" id="201304110135">
+              <h2 class="blog-post-title mb-1">2013 April 11</h2>
+              <p class="blog-post-meta">at 01:35</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>New Bird</b></span><br>Old bird was boring. New bird is nonstop screaming at top volume.<br><br><img src="https://i.imgur.com/8p6gUMl.png" alt="" border="0">
+            </article>
+
+            <article class="blog-post" id="201304140952">
+              <h2 class="blog-post-title mb-1">2013 April 14</h2>
+              <p class="blog-post-meta">at 09:52</p>
+              <blockquote class="blockquote">Although, I found the citation penalties were too soft, you could actually just stamp everything without looking and still make $70-80 each day after deductions. Also, it turns out that paying penalties is as optional as the rent, and as a result I managed to get $815 in savings at the end of the 8 days, with all of my family "OK".<br>There wasn't even any consequences for doing so, the only people that went on to cause trouble had legitimate documents anyway...<br>
+</blockquote>
+<br>This is a good point and something I never thought to try. I'll probably end the game after 5 penalties or something.<br><br><blockquote class="blockquote">Finally, if you play the game through again and try refusing those Kolchians entry, it becomes pretty obvious that the game is forcing you to let one through...<br>
+</blockquote>
+<br>I don't have to make the paperwork actually Kolechian, which might help. But really there are certain scripted things that will play out the same each time no matter what. A proper endless mode separate from the story mode should help with replayability.<br><br><blockquote class="blockquote">Perhaps instead of deducting money continually, after 4-5 penalties the day ends prematurely due to the immigration inspector needing "counseling".<br>
+</blockquote>
+<br>Yup, that sounds good.<br><br><blockquote class="blockquote">Oh, and the end-of-day tally is buggy for me and a friend, and text appears over the button to go to the next day. Do you think that implementing a scrollbox for that would help?<br>
+</blockquote>
+<br>I hate scroll boxes but I'll figure something out. Maybe drop to a smaller font if there are too many items.<br><br><blockquote class="blockquote">And last thing! Will there be hotkeys to easily navigate through documents?<br>
+</blockquote>
+<br>I'm not too crazy about keyboard shortcuts and I'm not even sure how that would work to navigate documents. I've thought about simplifying this aspect of the game a couple times, but shuffling things around is a pretty critical element of game's mechanics. Right now you can use the space bar to toggle inspection mode and I'm thinking to add right-click to inspect+highlight in one go.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>New Build, Not Exciting</b></span><br><br>I finally broke down and made a new build with minor fixes. There was a rare game-stopping bug on day 2 that someone helped me track down and I got tired of explaining that the day 3 no-papers guy was not a bug, just bad design. Curious to see if my brilliant solution works.<br><br><span style="font-size: 14pt; line-height: 1.3em;"><b><a href="http://www.dukope.com#ppl" target="_blank">BETA 0.5.7 - GRAB IT HERE</a></b></span><br><br><ul style="margin-top: 0; margin-bottom: 0;">
+<li>Added better hints for day 3 missing-papers guy</li>
+<li>Fixed progression stopping bug on day 2</li>
+<li>Fixed penalty after correcting mistaken visit duration</li>
+<li>Updated bird logo. Now with screaming</li>
+<li>Fixed clickable Rent/Penalties on night screen</li>
+</ul>
+            </article>
+
+            <article class="blog-post" id="201304171917">
+              <h2 class="blog-post-title mb-1">2013 April 17</h2>
+              <p class="blog-post-meta">at 19:17</p>
+              <blockquote class="blockquote">oh my god, they are so expensive...they sent me a package and Iwas like "oh sure that would be awes-" $20K  FOR ONE WEEK HOMEPAGE AD <br>
+</blockquote>
+<br>Get the eff out of here right now. 20,000 American dollars!? Although, given the absurd way that it completely dominates the entire page, MAYBE NOT SO BAD.<br><br><blockquote class="blockquote">Just played your beta of your game. I liked it a lot. I hope you will seriously consider your thoughts (quotes above) and adding a MP component to your game....Granted this could get quite complicated. Anyway Ideas a free. <br>
+</blockquote>
+<br>Thanks, and yes. I'm still thinking about a multiplayer side to this, but definitely not for the first release.<br><br><blockquote class="blockquote">Love your game, simple and fun!<br>But I found a bug in day 6, the suicide bomber wasn't show up which made the game continue forever. He appeared at first time but after I restarted that mission(made many mistakes), he never shows up again.<br>I tried to restart the game and restart my computer. Nothing fix that bug.<br>Or could you tell me where is a save file of this game? I will try to edit save file just for a work around.<br>
+</blockquote>
+<br>I need your help to fix this! This is a rare bug that's affected a few people and I haven't been able to track it down. I'll PM you with some questions.  <img src="https://forums.tigsource.com/Smileys/derek/beg.gif" alt="Beg" border="0">
+            </article>
+
+            <article class="blog-post" id="201304180806">
+              <h2 class="blog-post-title mb-1">2013 April 18</h2>
+              <p class="blog-post-meta">at 08:06</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Sniping</b></span><br>(Ignore the double cursor. My only LICEcap complaint)<br><img src="https://i.imgur.com/gYlpbIg.gif" alt="" border="0"><br><br>I wrestled for a while with how to handle the sniping. There were a brief few microseconds when I thought to cut it. Those moments passed without incident and now we're left with this.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>The Problem</b></span><br>The problem is that sniping with a mouse is way too easy. Previously I suggested it might change from a cross-hair to an aim-line or some other silly thing to increase the difficulty. Obviously that's a terrible idea but I still wanted to make it harder.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Sorted It</b></span><br>So this is my solution. The sniping is still easy. What's hard is getting the gun. It's not just about moving your cursor up to the top any more. You have to be fast. In order to access a gun, you first need a key. You'll get these through the course of the story. Once you've got a key, it sits on your desk wherever you put it, buried under the papers, unused. When the moment strikes, you'll need to find the key on your desk, unlock the gun drawer using the key, select the gun, then shoot the runner/trespasser/enemy. If it sounds like a pain in the ass that's because it is. It uses the same standard interface of paper shuffling and drag and drop, but with an extreme time limit. The level of panic is just right. By the time you get the gun out, there's only a second or two to aim and shoot before the grenade is thrown.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Armaments</b></span><br>There'll be just two guns, unlocked as the game progresses:<br><br><b>Tranquilizer rifle</b><br><ul style="margin-top: 0; margin-bottom: 0;">
+<li>3 rounds</li>
+<li>less precise aiming</li>
+<li>non-lethal drop in one hit (death animation above is wrong, it'll be bloodless)</li>
+</ul>
+<br><b>Sniper rifle</b><br><ul style="margin-top: 0; margin-bottom: 0;">
+<li>2 rounds</li>
+<li>precise reticule</li>
+<li>kills in one hit (bloody)</li>
+</ul>
+<br>The tranquilize gun comes first so you'll always have the option for non-lethal force.
+            </article>
+
+            <article class="blog-post" id="201304181056">
+              <h2 class="blog-post-title mb-1">2013 April 18</h2>
+              <p class="blog-post-meta">at 10:56</p>
+              <blockquote class="blockquote">I think it's because you don't need to spot out the differences with your booth software in order to successfully deny people entry.<br>...<br>It happened to me the first time I played though as well.<br>
+</blockquote>
+<br><blockquote class="blockquote">Ohhh, I got it now.<br>...<br>I think I got confused because before this moment every time you accept or deny entry by stamping passport. And it's sudden change in this main mechanic. <br><br>(on a side note, I wish I could stamp other papers too, without any affect on a gameplay, just for the sake of it)<br>
+</blockquote>
+<br>Gotcha. Thanks for the info guys. I can see now that the leap at this moment from just stamping to being gated by inspection is too much. Citations and bulletin hints or not. Gonna put some more thought into how I can lower this barrier, smooth out this bump, and nail this metaphor.
+            </article>
+
+            <article class="blog-post" id="201304222237">
+              <h2 class="blog-post-title mb-1">2013 April 22</h2>
+              <p class="blog-post-meta">at 22:37</p>
+              <span style="font-size: 14pt; line-height: 1.3em;"><b>Suddenly, Mods</b></span><br><br>If you've poked around in any of the beta's asset directories, you may know that all the game's assets are editable. Part of this is because Haxe/NME doesn't have an asset packaging system built in. Part of it is because I thought it would be cool if people could see how the game was set up.<br><br>While I never planned it, people have already started modding the game. This is a weird feeling for a game creator; especially when the game isn't done yet. There are some cool mods and some tasteless ones. Given the game's subject matter, this isn't surprising.<br><br>For the latest beta, I decided to address the issue. There were two options:<br><br>    <b>1.</b> Lock down the assets and prevent modding<br>    <b>2.</b> Support mods properly<br><br>I first implemented #1. That meant writing a build process to bundle/encrypt the assets and an in-game module to load/decrypt them. Haxe/NME made this amazingly easy and it really drove home the power of the language and tools.<br><br>I was pretty set with that when I came to my senses. Once the assets are out (as in the previous betas), it makes no sense to suddenly lock them down. It's a dick move, even. If I liked a game enough to spend my time modding it, I'd be pretty pissed if the next build disabled mods. Even if they were unofficial. I got my start in games with Quake mods and have some understanding of the effort and devotion that goes into modding.<br><br>Ok, so I decided #2 was a better choice in the end. At least for the pre-release builds.<br><br><br><span style="font-size: 14pt; line-height: 1.3em;"><b>Proper Support</b></span><br><br>Adding proper mod support wasn't that hard. There are 3 important things in my opinion:<br><br><b>1. Make them easy to distribute</b><br>Again, Haxe/NME pulled through here. There's a great exsiting api to extract zip files in Haxe. Using that lets modders zip up their asset directory into one nice .ppmod file that's easy to download. A .ppmod can by played by saving it next to PapersPlease.exe and drag+dropping it onto the executable.<br><br><b>2. Don't require overwriting original assets</b><br>The currently available mods are basically just a zip file of the entire beta, including the exe and all (edited) assets. This is wasteful and unsafe. I know I'm less likely to run a strange exe than I am to run an asset-only mod. Working over the original files is also a painful way to develop a mod and it's better to have a set of "override" assets instead. This allows including only the edited assets in a mod, which increases the likelihood that it'll work across multiple versions of the game.<br><br><b>3. Assign visible credit</b><br>This is the most important for me and there are two parts. First, it has to be clear that I didn't create the modded content. This is especially true when someone makes a tasteless mod. I don't want people to make a connection when seeing one of those and "Created by Lucas Pope" on the title screen. Second, good mods are a lot of work. If someone puts in the time and effort to make a mod, I want them to get credit. When running the latest beta, the game displays the mod name/author on the title screen and links to the author's website.<br><br><br><span style="font-size: 14pt; line-height: 1.3em;"><b>Reaction</b></span><br><br>We'll see. Even with a more complete modding system, it takes a few additional steps to create a mod now. Some people are already complaining about this so I guess you can't win sometimes.<br><br>Hopefully a few good mods come out of this, but for now I'm turning my focus back to finishing the game.
+            </article>
+
+            <article class="blog-post" id="201304232338">
+              <h2 class="blog-post-title mb-1">2013 April 23</h2>
+              <p class="blog-post-meta">at 23:38</p>
+              <blockquote class="blockquote">But obviously some people are bothered by it (even though they really aren't very detailed), so if it was just a checkbox in the options menu that defaulted to off, that'd make everybody happy.<br>
+</blockquote>
+<br>This is exactly how it's handled now.<br><br><img src="https://i.imgur.com/gDRVk6O.png" alt="" border="0"><br><br>In general, I'll sacrifice message for practicality but it does default to 'on'.<br>
+            </article>
+
+            <article class="blog-post" id="201304270726">
+              <h2 class="blog-post-title mb-1">2013 April 27</h2>
+              <p class="blog-post-meta">at 07:26</p>
+              <blockquote class="blockquote">
+<div class="quote">I wanted to point out that whenever you have to ask someone to provide a missing document and they produce it, all of their information is always correct. I have tested this over 15 playthroughs and it is always true so far.<br>
+</div>Yes, if there's anything superficially wrong with the papers (like a person with different, but known, names, or whose appearance is different from the picture in the passport, but the prints match), ultimately, there is always nothing wrong with them. Red herrings would be more fun.<br>
+</blockquote>
+<br>An interesting thing I found very early is that the more errors an entrant has, the easier it is. The beta is currently limited to at-most one error per entrant. As you guys have noticed that makes it too predictable so I'm changing it to handle this case better. Documents revealed later may have errors in the final version.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Beta 0.5.13</b></span><br><br><span style="font-size: 14pt; line-height: 1.3em;"><a href="http://dukope.com#ppl" target="_blank"><b>GRAB IT HERE</b></a></span><br><br>Just a few bug fixes.<br><ul style="margin-top: 0; margin-bottom: 0;">
+<li> No new content.</li>
+<li>  Show helpful error when trying to run without enough OpenGL.</li>
+<li>  Fixed some issues with continuing a game in progress.</li>
+<li>  Fixed "Invalid News0" citation message.</li>
+<li>  Fixed crash when continuing from day 9.</li>
+<li>  Fixed double-detain bug on scripted entrants.</li>
+<li>  Corrected citation penalty amount text.</li>
+<li>  Removed Jorji and made day 3 a much more casual-friendly experience.</li>
+<li>  Just kidding. It seems the last fix worked. No more changes to day 3.</li>
+</ul>
+<br>There was one major issue I wanted to fix with this build. On some people's machines, the rendering is totally screwed up and the game eventually crashes. Turns out it was related to missing OpenGL drivers. The game now prints a useful error message in this case.<br><br>Hopefully there's nothing majorly wrong with this build as I'm hoping to move off the beta and start the push for final release.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Endless Mode</b></span><br><br>An endless mode is something I've been mulling since the beginning, and it's a common request. So now I'm committing to it.<br><br><img src="https://i.imgur.com/4IHjizh.png" alt="" border="0"><br><br>This will be a separate mode, possibly unlocked after completing story mode. The days/entrants/rules/events will be randomly generated with some basic progression. I may or may not include the night-time money management here. Will have to test it out. This mode also might include some kind of online leaderboards/rankings/integration. Depends on the effort/payoff balance.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>From Here</b></span><br><br>I've got the story and mechanics for the rest of the game mostly mapped out. There's a lot of stuff I think is cool and that I'd like to show in here. But I kinda want the rest of the game to be a surprise and am thinking to avoid posting any further content here.<br><br>Not sure how I should handle this actually. Any thoughts? At the very least, I'll respond to comments here. And I'm planning to keep a private devlog of my progress. Something I can post here after the game's release.
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2013May">
+            2013 May...
+          </h3>
+
+
+            <article class="blog-post" id="201305020404">
+              <h2 class="blog-post-title mb-1">2013 May 02</h2>
+              <p class="blog-post-meta">at 04:04</p>
+              Holy shit! Thanks everybody! That was fast! I'm thinking to write some nonsense on why I think it got greenlit in such a short time. I planned nothing but in hindsight might be able to explain it.<br><br>-------------<br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@gene123:</b></span> [Ideas]</span><br>There are some good ideas here. The reducing food costs was planned, but I completely forgot about it. I'll definitely do that. Luggage is something I cut for good after implementing the search system. It just turned out to not be necessary enough to be worth the work. The other stuff is cool, but not quite what I have in mind.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@qqqbbb:</b></span>  [rightclick drag papers, slavic gender names]</span><br>Someone else suggested right-click for dragging papers back. My response was that I don't want to add a whole new drag mode to optimize out a part of the game that I think is important. For the names, I actually have some gender consideration for the names, but I guess it could be wrong. The problem unfortunately will only get worse when I integrate the user-submitted names. There's over 10,000 of them now so I'll probably just punt on any kind of gender correctness.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@arkhometha:</b></span>  [newspaper bug]</span><br>Thank you for trying to reproduce this bug. Someone contacted me with a video showing the glitch. Basically, you have to correlate his name with the card, then when the detain button pops up, click it and immediately give him the card. The detain button will pop up a second time. If you hit it then, the newspaper will show both stories.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@Gila:</b></span>  This kind of takes the challenge out of the game and reduces the replayability value at least for me</span><br>The main story mode will only have a small amount of randomness. I'm more inclined to get the narrative right than to make it replayable. Hopefully the endless mode can satisfy that itch.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@Angrytemplar:</b></span>  For some reason medicine didn't work</span><br>Medicine doesn't immediately cure sickness. I'm not sure about the exact stats but it can take a few days to get better. Could this be what was happening?<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@Monolith:</b></span>  Consider adding a one-off immigrant who wants to buy your "dirty" photos.</span><br>SSSHHHH.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@GepardenK:</b></span>  [family stuff]</span><br>I'm 80% set on the current family setup. But people are pretty consistent in asking for more. So I'm going to keep thinking about it. I doubt I'll go as far as adding a shop menu. I've been thinking about ways to expand what's there while maintaining the vagueness that I like.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Re: Sniping</b></span><br>Trust me, you will want to pull the trigger and it will feel good when you hit your target. I've worked out a story arc that's deeply integrated with the sniping. This is my favorite arc so far so the matter is completely settled in my mind.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Re: The Eagle</b></span><br>As JohnnyG says, the eagle is not only a fascist mark. The world is overflowing with countries that use the eagle. I realize it's not normally associated with communism but it's a more eye-catching government-y symbol for me than a star or sickle. The original eagle was based on the Romanian shield. I wanted something more crazy and so switched to the current mix of screaming bird and American eagle.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Re: Ideas/Suggestions</b></span><br>Part of my goal for this game is to do a lot with very little. It's basically a single-screen game with a mostly-static interface. I've worked out enough of the story to think that I can make a good game using only the elements that are already there. That means I probably won't add new modes like night-time duty, walking-to-work, or pulling-guns-on-entrants. I know this sounds short-sighted, but please just give me the benefit of the doubt. <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"> There is still a lot of unexplored territory in only the features available in the beta. There's more I haven't shown and I want to explore that thoroughly before adding anything else.
+            </article>
+
+            <article class="blog-post" id="201305050634">
+              <h2 class="blog-post-title mb-1">2013 May 05</h2>
+              <p class="blog-post-meta">at 06:34</p>
+              <span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@Eigen:</b></span> Will you be adding Steam achievements?</span><br>Maybe. I haven't gotten the SDK yet so I'm not entirely sure how much work it is. I kinda like achievement systems so I'll probably try to do something.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@Ghost13:</b></span> [uv light, criminal fingerprints]</span><br>UV seals are on my if-there's-time list. It basically depends on if there's a need to introduce a minor mechanic complication later in the game. Criminal fingerprints are a cool idea. I've already got a mugshots system with pictures but I hadn't considered just showing fingerprints. Gonna think about that.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@Schrikvis:</b></span> [post-effects, terrorist attack on queue, re-using names]</span><br>After some experimentation, I found that post effects didn't work well with the low-res minimalist style I'm going for. I have lots of cool attacks planned for the final and that's all I'll say about that <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"> For reusing names, I can't think of a good way to correlate an already-used name without a full list of processed names and I don't really want to do that.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@metasynthie:</b></span> [totally awesome stuff about different run styles, can't verify gender with fingerprints]</span><br>Wow! Those run styles sound really cool. I'm a huge Doom speedrun fan but never expected to see that sorta thing for my own game <img src="https://forums.tigsource.com/Smileys/derek/smiley.gif" alt="Smiley" border="0"> Some of those won't be viable when I add the escalating penalties. But it kinda gives me an idea for some achievements. Showing gender on the fingerprint card is a good idea. Will try that.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@Willowcat:</b></span> [family member job, weather, more corruption, censorship]</span><br>There will be lots of scripted night-time events affecting your finances. Family members getting jobs isn't one of them, but there's similar stuff planned. I'm undecided on weather. A couple people have suggested it but so far I haven't felt it's needed. The beta is around one-third of the game so you can expect plenty of interesting and corrupt individuals to follow. And finally, there will be an option to cover up the strip-search nudity.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@TacoDeBoss:</b></span> [didn't understand inspecting notes or enabling detention]</span><br>Can you tell me when/how you realized you could inspect that stuff and enable detaining? Knowing that may help me figure out a good way to teach the concept.<br><br><span style="color: teal;"><span style="font-size: 11pt; line-height: 1.3em;"><b>@babac:</b></span> [interrogation, nudity, don't like issuing city]</span><br>Interrogation can sometimes lead to the entrant producing a missing document. If you don't care about that, then currently there's no difference. As a practical matter, the nudity needs to be optional. I'm totally fine giving up a little bite from the game's message for practicality. You're not the first person to complain about the issuing cities. I think TB even explicitly ignored them. Again, this is one of those things (along with the too-small desk and lack of hotkeys) that I really enjoy about the game. An inspector needs to know lots of random facts. And the only cost of not knowing is time to look it up.<br><br><hr>
+<div align="center">
+<span style="color: red;">If you signed up recently to post here, please check out and comment on the other awesome games in<br><span style="font-size: 12pt; line-height: 1.3em;"><b><a href="https://forums.tigsource.com/index.php?board=27.0" target="_blank"><span style="color: red;">&gt;&gt;THE DEVLOG FORUM &lt;&lt;</span></a></b></span><br><a href="https://forums.tigsource.com/index.php?topic=25699.0" target="_blank"><span style="color: red;">Eigen's <b>Pioneers</b> is a good one</span></a></span><br>
+</div>
+<hr>
+            </article>
+
+            <article class="blog-post" id="201305070232">
+              <h2 class="blog-post-title mb-1">2013 May 07</h2>
+              <p class="blog-post-meta">at 02:32</p>
+              There's no need to argue over Steam in here. It's a personal preference and I'm working to make the game available on other services.<br>
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2013August">
+            2013 August...
+          </h3>
+
+
+            <article class="blog-post" id="201308010758">
+              <h2 class="blog-post-title mb-1">2013 August 01</h2>
+              <p class="blog-post-meta">at 07:58</p>
+              <blockquote class="blockquote">So where should I get the game? I suppose you have different deals on all these places. Or maybe you want steam sales to have a better chance of front page display?<br>
+</blockquote>
+<br>You know I'm not sure. Humble Store gives the biggest cut but yeah, that means it won't get a feature on Steam. I think Steam at least isn't that interested in the preorder phase since there's no bonuses or discounts. I really wanted to add bonuses, but Steam isn't built for extra non-DLC content that's external to the game.<br><br><blockquote class="blockquote">I'd like to congratulate you on this victory.<br>Finishing a game is difficult, but you pulled it off in quite a nice fashion. You've got loads of fans and hype, and with good reason!<br>
+</blockquote>
+<br>Thank you!
+            </article>
+
+            <article class="blog-post" id="201308011327">
+              <h2 class="blog-post-title mb-1">2013 August 01</h2>
+              <p class="blog-post-meta">at 13:27</p>
+              <blockquote class="blockquote">Congrats man, I'm really excited to pick this up.  Good luck with the sales (with all the publicity you've gotten, I think it should go quite well <img src="https://forums.tigsource.com/Smileys/derek/wink.gif" alt="Wink" border="0">)!<br>
+</blockquote>
+<br>Thank you (and everyone else)!<br><br>It's been so long since the last public beta, I'm beyond nervous about how the game will be received. So many little things I want to tweak and fix but at the same time I'm completely burnt out. The last big task which I'm forcing myself to do is go through more of the submitted names with the goal of including as many as possible.
+            </article>
+
+            <article class="blog-post" id="201308101843">
+              <h2 class="blog-post-title mb-1">2013 August 10</h2>
+              <p class="blog-post-meta">at 18:43</p>
+              <span style="font-size: 12pt; line-height: 1.3em;"><b>Thanks for the support!</b></span><br><br>Busiest two weeks of my entire life. Since the launch I've been working 20 hour days on support responses and putting the first update together, which fixes a shit ton of stuff.<br><br>On top of that, there's been an endless stream of review code requests. To help deal with all this stuff I ended up preparing several user-facing websites beforehand and tweaking them throughout the launch.<br><br>So I've finally got things puttering along on the support/media side and just finished a test run of the first game update. If you want to try it out, I've set up a <a href="http://papersplea.se/update" target="_blank">preview release on Steam</a>. The fact that Steam allows this kind of branch distribution is really great.<br><br>Just a quick post now but I'll be back when things cool down a little bit with more info about the launch.
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2013November">
+            2013 November...
+          </h3>
+
+
+            <article class="blog-post" id="201311060055">
+              <h2 class="blog-post-title mb-1">2013 November 06</h2>
+              <p class="blog-post-meta">at 00:55</p>
+              Gonna start posting some postmortem stuff here now.<br><br><span style="font-size: 16pt; line-height: 1.3em;"><b>After The Beta</b></span><br>The last beta (0.5.13) was released in April (?) and had 8 days of gameplay. It feels like a solid demo but nothing beyond that had been implemented. In the time between April and July, I worked to fill out the mechanics and story.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Story</b></span><br>Of all the things that went into the game, the hardest part for me to do, by far, was arranging the overall progression and narrative. During the entire development I collected and implemented small encounters or mechanics. Coming up with these was really fun; spy document handoff, nosy reporter, time bomb defusing, corrupt guard, etc. The task of tying all that together with a logical progression and interesting story was not as fun. I wanted the gameplay to evolve at a good pace but also to motivate each new mechanic with a story element. And with lots of these things to lay out, it's also important to avoid having too many things happen at once that can misdirect or confuse the player. <br><br>As an example, there's a secret document hand-off encounter early in the game. You get handed two identical documents and need to keep them straight:<br><br><img src="https://i.imgur.com/Yy0N04a.png" alt="" border="0"><br><br>Implementing this was easy but there was no clear place to put it in the game. The event involves a bulletin callout, 2 travelers (the spy and his follower), and 2 documents. It's a pretty heavy event actually because once you read the bulletin, you're on the lookout for the first spy and his follower; it somewhat consumes the player's headspace. This meant that I didn't want it to overlap with any other days where you have an important bulletin message, when you're expecting someone specific, or when you have another document handoff. It finally wound up on the same day you meet Calensk. Now the problem is that as soon as you read the bulletin about a spy coming, this military-looking guy walks up. Naturally you'd think he was the spy. If I had any other choice I would've moved this encounter or Calensk's intro but out of the 31 days there was no other place. I ended up just letting these events overlap but made one small dialog addition to clear up any confusion. When Calensk walks in for the first time, the inspector asks "Are you the spy?", to which he responds "What? No". <b>Ship it.</b><br><br>This is one example but there were lots of cases like this where I had to be very careful with the arrangement. Each event, encounter, mechanic, introduction, etc required coordination with everything else. I started by layings things out on paper but that didn't last long. Eventually I do what I normally do and wrote a tool to help:<br><br><img src="https://i.imgur.com/AmtXtjzl.png" alt="" border="0">  <br><a href="https://i.imgur.com/AmtXtjz.png" target="_blank">Full-size</a><br><br>This is the basic story layout tool. Each column is a day and the boxes represent mechanics, rules, news stories, travelers, bulletins, etc. I define the dependencies in a simple text format then load it up here and slide the boxes around to visualize how everything will play out. Some events have multiple boxes spanning several rows and several days. Once everything was set up I could quickly see empty or crowded spaces and tweak things accordingly.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Economy</b></span><br>For the beta release, the game had a very simple economy. I didn't put much thought into it at the time and there were lame ways to exploit your income. For the final game I knew I'd need better planning to put the average player under constant money pressure. Again, this is something I tackled with a custom tool.<br><br><img src="https://i.imgur.com/ijJD0EK.png" alt="" border="0">  <br><a href="https://i.imgur.com/nbVRBuN.gif" target="_blank">Full-size animated gif</a><br><br>The days are listed from top to bottom this time. Each row represents one day and has the news stories, processing (T=traveler, P=penalty, D=detain), special encounters (bribes, story events), nighttime messages, and expenses. Each element is a button and allows quickly testing different scenarios by toggling each effect on and off. For example, clicking the [P2] on the first line will simulate getting 2 penalties on day one. That effect will propagate through the entire game to show nighttime earnings, adjusted events, and even when the family would start dying. <br><br>This economy simulator was one of my more useful tools made for the game. The stuff I learned with it fed back into the story layout to let me know when it would be good to add a bribery or other money-affecting event. The niece event was laid out this way. I saw a dip below zero on one day and came up with the story for her to appear with her mom's savings as relief.<br><br><br><hr>
+<span style="font-size: 16pt; line-height: 1.3em;"><b>Stuff That Was Cut</b></span><br>Coming soon...<br>
+            </article>
+
+            <article class="blog-post" id="201311110442">
+              <h2 class="blog-post-title mb-1">2013 November 11</h2>
+              <p class="blog-post-meta">at 04:42</p>
+              Thanks guys. I'm reaching the limits of my memory and figured I should write it down sooner rather than later.<br><br><blockquote class="blockquote">I love your game, I hope you get more involved with the technical side as well, or is that early on in this Dev log here?<br>
+</blockquote>
+<br>Yeah any postmortem stuff will just cover the last few months when I stopped posting here. Check back through the thread for lots of technical details up until the beta.
+            </article>
+
+            <article class="blog-post" id="201311110624">
+              <h2 class="blog-post-title mb-1">2013 November 11</h2>
+              <p class="blog-post-meta">at 06:24</p>
+              <span style="font-size: 16pt; line-height: 1.3em;"><b>Stuff That Was Cut</b></span><br>One of the most valuable lessons I learned working in AAA is that nothing is above being cut. Developing (and finishing) a game is just as much about removing things as it is adding them. Cutting stuff out that doesn't add to the experience or when the payoff doesn't match up with the cost of implementation is actually something I enjoy. It keeps me constantly thinking about the core of what makes a game fun or interesting.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Baggage</b></span><br>From the very beginning I envisioned a simple baggage-inspecting mechanic. Basically just like the body scanner but with randomized contents and a gun or two every once in a while. I kept putting off the implementation until eventually it wasn't needed. The game was already fun without it and adding it would've been a sizable task. Instead, I made it a point that baggage is not allowed so it sorta fit well with the narrative.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Booth Shenanigans</b></span><br>The booth screen was supposed to have more going on. The shutter switch is some evidence of that; there were plans to have immigrants pull a gun or otherwise threaten the inspector. When this happened you'd have to close the shutter quickly or pull your own gun or something. Like the baggage though, I held off implementing it long enough to decide that it wasn't necessary. Normally I'd remove any vestiges of a cut feature but in this case I left the shutter switch in. It's a fun little thing to role play and it comes in handy for triggering a hint early in the game. I still get comments about the pointlessness of this switch though. Maybe I should've removed it.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>UV Seals</b></span><br>I think these are mentioned briefly in the devlog somewhere. The document seals were supposed to grow more involved. As part of the general progression of complexity, I wanted to add a special UV light in the late game that would be needed to verify a new type of document seal. The idea was to have only a small area of the desk lit by UV light. You'd have to move the document into this area to reveal a second "hidden" image in the seal that needed to match the rulebook. It seemed like a cool way to increase the difficulty and would've been a nice technical effect. Unfortunately and once again, this feature got pushed back far enough that it fell off the edge. Unlike some of the other cut stuff, I held out on this one for a bit longer though. I was ready to add it in until the last few weeks, when I'd laid out enough of the story and progression to find there was no room left for it.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>Search Photo Confiscation</b></span><br>This is the latest major cut I can remember. An early assumption was that the game would have both the search mechanic (which left naked photos on your desk) and a way to sell those photos for money. There's even a devlog post where I'm wink wink hinting at this, as if it's not an obvious extension of the search mechanic. This is basic low hanging fruit when dealing with the concepts of security and privacy wrapped up in body scanning. Surely those security personnel are keeping and/or profitting from naked pictures of people. Now you can too! The mechanic worked like this:<br><br><img src="https://i.imgur.com/kncyymO.png" alt="" border="0"><br><br>I didn't want (too many) documents crowding your desk so I created the confiscation drawer. Search photos would automatically move to your confiscation drawer and stay there until the end of the day. Unsavory characters would come in and offer you 5 credits per photo, which you could drag out of the drawer and give to them. Easy.<br><br>The confiscation drawer was a nice solution to the technical problem of having a full day's worth of unique documents loaded in memory. As soon as the person walks out of the booth, the custom photo is unloaded and the confiscation envelope changes to become a generic "closed envelope" with some descriptive text.<br><br>Everything here was completely implemented before I started laying out the final days of the game. That's when I noticed a few problems. <br><br><ul style="margin-top: 0; margin-bottom: 0;">
+<li>Why are only passports and search photos confiscatable?</li>
+<li>Passport confiscation is a critical end-game revelation.</li>
+<li>Search photo confiscation is a setup for a few obvious (and superfluous) encounters.</li>
+<li>All the rules about confiscation have to mention both photos and passports.</li>
+<li>Search photos appear very early in the game but passport confiscation only makes sense near the end.</li>
+</ul>
+<br>The big problem for me was a softening of the focus on passport confiscation. Taking someone's passport is a clear escalation on the things-are-getting-serious scale. This sets up the scenario of having your own family's passports taken and leads directly into the end game. Selling someone's bodyscan photo is just another notch on the creeper-security-agent-is-selling-my-naked-pics scale. Under the original scenario, the drawer appeared along with the ability to search, near the start of the game. This meant you could confiscate photos for a long time when suddenly you'd have to start taking passports too. There'd be no obvious UI hint for this change (the drawer was almost always there, just now you should put passports in too). From a mechanics and progression perspective, I found there was a lot more impact if the confiscation drawer was introduced for the purpose of taking passports. <br><br>Giving up for-sure features like this can be hard, especially after they're implemented. Whenever you have a bunch of issues pile up related to a specific feature though, it's worth taking a step back and asking yourself what you gain or lose by cutting it.<br><br>Ultimately, even though I'd already implemented photo confiscation, it was an easy choice to remove it. Taking it out gave me a better game in every way, leaving the concept of confiscation limited to passports. Probably my favorite cut.<br><br><span style="font-size: 12pt; line-height: 1.3em;"><b>The Overwatcher</b></span><br>If you go back through the devlog, you can find some discussion of how weird it is to get detailed citations for mistakes. As if someone is watching over your shoulder. Why not have <i>that</i> guy check the passports? This bothered me for most of the project and I considered a few different ways to handle it. My original plan was to incorporate this "overwatch" theme deeply into the core gameplay and story.<br><br><img src="https://i.imgur.com/5g70G13.png" alt="" border="0"><br><br>In the beta, you can see the not-yet-functional overwatch light on the stamp bar. It wasn't going to be explained until much later, but the overwatcher worked in shifts. When this light was on, he was watching; if it turned off, he wasn't. If you wanted to approve someone with a mistake on their passport, you could avoid a citation by waiting until the light went out to quickly stamp/return the documents. With the overwatcher part of the core mechanics like this, he was also going to show up in the story. Sergiu was originally supposed to have some kind of connection with the overwatcher. I hadn't worked out any details but figured there was potential for favors to be exchanged. I also wanted one of the EZIC agents work his way into the overwatch position with your help. If you approved a certain agent, a few days later you'd receive a printout letting you know that EZIC is now in control of the overwatch post and all the rules have changed. That would've created an interesting situation where the printed bulletin and rulebook meant nothing and the player had to work against a different set of secret EZIC commands.<br><br>So that was all well and good; lots of potential. I really like this kind of subversion of expectations, where the rules change suddenly or the player is faced with something unexpected and has to change their thinking. <br><br>After working through a few scenarios though, I was left overall with a worse game than before. The moment the script flips is all well and cool but it's at the cost of everything before and after. If the overwatcher works in obvious shifts then all the sob story immigrants just become a case of waiting a few seconds for the light to go out. It changes the focus from the interesting stuff to watching for a light to turn off.<br><br>After that realization, I considered ditching the light mechanic but keeping the tangible overwatcher. There'd be no way to "cheat" the citations but I could keep the EZIC overwatch-takeover concept and have all the rules change in the late game. Maybe that could've worked with a lot of careful thought but in the end I was left feeling that it weakened a central premise of the game that you're a powerless cog in an uncaring machine. If the overwatcher is a guy that can be so easily reached then maybe the system isn't so overbearing. Unaddressed and untouchable though, it becomes an implicit force outside of any influence. I feel this works better for both the gameplay and the story. In the final game there's only a touch of mystery behind the citations but it's (I hope) quickly accepted as an implicit construct.<br><br>Even beyond these two (good) reasons, messing with the citation system subverts the right-or-wrong judgement tied to the core mechanic of finding discrepancies. Once that judgement is abandoned, the discrepancy hunt falls apart completely. That was especially decisive for me since I strongly believe in the importance of gameplay systems in effective interactive media. <b>This cut goes all the way to the top.</b><br><br>Also I removed the overwatch light. People were clicking it like a button.<br><br><br><hr>
+<span style="font-size: 16pt; line-height: 1.3em;"><b>Stuff That Was Added at the Last Second</b></span><br><br>Coming soon...
+            </article>
+
+            <article class="blog-post" id="201311111957">
+              <h2 class="blog-post-title mb-1">2013 November 11</h2>
+              <p class="blog-post-meta">at 19:57</p>
+              There's more coming but I'm gonna put this here to make previous entries easier to find.<br><br><hr>
+<span style="font-size: 16pt; line-height: 1.3em;"><b>After The Beta</b></span><br><blockquote class="blockquote">The last beta (0.5.13) was released in April (?) and had 8 days of gameplay...</blockquote>
+<br><a href="https://forums.tigsource.com/index.php?topic=29750.msg964745#msg964745" target="_blank">Read full post</a><br><br><hr>
+<span style="font-size: 16pt; line-height: 1.3em;"><b>Stuff That Was Cut</b></span><br><blockquote class="blockquote">One of the most valuable lessons I learned working in AAA is that nothing is above being cut...</blockquote>
+<br><a href="https://forums.tigsource.com/index.php?topic=29750.msg966317#msg966317" target="_blank">Read full post</a><br><br><hr>
+            </article>
+
+            <article class="blog-post" id="201311180519">
+              <h2 class="blog-post-title mb-1">2013 November 18</h2>
+              <p class="blog-post-meta">at 05:19</p>
+              <blockquote class="blockquote">Fantastic read! It must have been damn tough pulling the trigger on some really cool-sounding features.<br>
+</blockquote>
+<br>I'm at the point now where I actually really like to cut stuff. Like I mentioned, it gets me to concentrate on the core of the game and why it's enjoyable. I feel like the more I chip away, the more refined it becomes.
+            </article>
+
+            <article class="blog-post" id="201311190641">
+              <h2 class="blog-post-title mb-1">2013 November 19</h2>
+              <p class="blog-post-meta">at 06:41</p>
+              <blockquote class="blockquote">I thought Obristan being so easy to immigrate to was a way of showing how ridiculously complicated your own job was. No checks, no questions, it felt like the game was exposing the overly bureaucratic Arstotzka border control checkpoints.<br>
+</blockquote>
+<br>Yeah this was a happy result of changing to the simple ending style. The full interactive segment would've been much closer to Arstotzkan-level bureaucracy in order to force the tension. Switching to just image+text gave me the freedom to treat it differently.<br><br>I especially like how Obristan doesn't give a shit about reason for entry. It's almost like a complete retrospective commentary on the entire game in just two lines of dialog.
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2013December">
+            2013 December...
+          </h3>
+
+
+            <article class="blog-post" id="201312102338">
+              <h2 class="blog-post-title mb-1">2013 December 10</h2>
+              <p class="blog-post-meta">at 23:38</p>
+              <blockquote class="blockquote">Just watched the documentary Video Games Changed The World on BBC 4. You got a fairly big mention near the end of the show even before they started talking about the indie scene.<br>
+</blockquote>
+<blockquote class="blockquote">
+<br><iframe width="640" height="385" src="//www.youtube.com/embed/WC9cpC3q1NA?fs=1&amp;start=" frameborder="0" allowfullscreen></iframe><br> look at the number one slot (this guy pretty popular on youtube) just thought you would like too see that people really enjoy your game<br>
+</blockquote>
+<br>This is insane. First, the Channel 4 thing, which is really amazing. Then, nominations for best Indie and best PC game at the VGX. It's also in the running for best PC game at GameSpot. Nerd Cubed picked it as his GOTY, saying it was a "perfect game". With support from Russian fans, Papers Please made it to round 2 of the Escapist's GOTY brackets, where everything else is AAA. I've been speechless for days.<br><br>During this flurry, I've mostly kept my head down with work on the localizations. There's more postmortem stuff coming, I just gotta find the time to post it!
+            </article>
+
+
+          <h3 class="pb-4 mb-4 fst-italic border-bottom" id="2014March">
+            2014 March...
+          </h3>
+
+
+            <article class="blog-post" id="201403231933">
+              <h2 class="blog-post-title mb-1">2014 March 23</h2>
+              <p class="blog-post-meta">at 19:33</p>
+              It's been a crazy few weeks. First the BAFTAs and now IGF. I started this game as a small experiment and it's exploded beyond all of my expectations. Here's a recap:<br><br><img src="https://i.imgur.com/9FaHR5y.jpg" alt="" border="0"><br><br>I have a bunch more postmortem stuff I want to finish; including a lot of detailed info on the localization process. That'll hopefully get posted over the next month or so while I'm taking a bit of a break. All the recent travel has really worn me out. After that I'll dive back into a new, smaller project.
+            </article>
+
       </div>
       <div class="col-md-4">
         <div class="position-sticky" style="top: 2rem;">
@@ -181,20 +715,40 @@
             wrote on his devlog.</p>
           </div>
           <div class="p-4">
-            <h4 class="fst-italic">Articles</h4>
+            <h4 class="fst-italic">Archive</h4>
             <ol class="list-unstyled mb-0">
-              
+
                 <li><a href="#2012November">2012 November</a></li>
-              
+
+                <li><a href="#2012December">2012 December</a></li>
+
+                <li><a href="#2013January">2013 January</a></li>
+
+                <li><a href="#2013February">2013 February</a></li>
+
+                <li><a href="#2013March">2013 March</a></li>
+
+                <li><a href="#2013April">2013 April</a></li>
+
+                <li><a href="#2013May">2013 May</a></li>
+
+                <li><a href="#2013August">2013 August</a></li>
+
+                <li><a href="#2013November">2013 November</a></li>
+
+                <li><a href="#2013December">2013 December</a></li>
+
+                <li><a href="#2014March">2014 March</a></li>
+
             </ol>
           </div>
           <div class="p-4">
             <h4 class="fst-italic">Elsewhere</h4>
             <ol class="list-unstyled">
               <li><a href="https://store.steampowered.com/app/239030/Papers_Please/">Papers, please (steam)</a></li>
-              <li><a href="https://dukope.com/">Lucas Pope website</a></li>
+              <li><a href="https://dukope.com/">Lucas Pope's website</a></li>
               <li><a href="https://forums.tigsource.com/index.php?topic=29750.0">Original forum thread</a></li>
-              <li><a href="https://github.com/fguillen/PapersPleaseDevlogScrap">Source code this website</a></li>
+              <li><a href="https://github.com/fguillen/PapersPleaseDevlogScrap">This website's source code</a></li>
             </ol>
           </div>
         </div>
@@ -203,7 +757,10 @@
   </main>
   <footer class="blog-footer">
     <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
-        href="https://twitter.com/mdo">@mdo</a>.</p>
+        href="https://twitter.com/mdo">@mdo</a>. Website build by
+        <a href="https://github.com/fguillen/PapersPleaseDevlogScrap">Fernando Guillen</a>.
+        All rights reserved
+      to <a href="https://dukope.com/">Lucas Pope</a></p>
     <p>
       <a href="#">Back to top</a>
     </p>
