@@ -71,7 +71,7 @@
             <h4 class="fst-italic">Articles</h4>
             <ol class="list-unstyled mb-0">
               <% articles.each do |article| %>
-                <li><a href="<%= article[:id] %>"><%= article[:date] %> at <%= article[:time] %></a></li>
+                <li><a href="#<%= article[:id] %>"><%= article[:date] %> at <%= article[:time] %></a></li>
               <% end %>
             </ol>
           </div>
@@ -81,6 +81,7 @@
               <li><a href="https://store.steampowered.com/app/239030/Papers_Please/">Papers, please (steam)</a></li>
               <li><a href="https://dukope.com/">Lucas Pope website</a></li>
               <li><a href="https://forums.tigsource.com/index.php?topic=29750.0">Original forum thread</a></li>
+              <li><a href="https://github.com/fguillen/PapersPleaseDevlogScrap">Source code this website</a></li>
             </ol>
           </div>
         </div>
