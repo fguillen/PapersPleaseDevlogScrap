@@ -1,18 +1,36 @@
 require "httparty"
 require "nokogiri"
+require "erb"
 
 
 class Script
-  RESULT_FILE_PATH = "#{__dir__}/index.html"
+  TEMPLATE_PATH_INDEX = "#{__dir__}/templates/index.erb"
+  TEMPLATE_PATH_ARTICLE = "#{__dir__}/templates/article.erb"
+
+  RESULT_PATH = "#{__dir__}/index.html"
+  CACHE_PATH = "#{__dir__}/cache.html"
 
   def run
-    File.truncate(RESULT_FILE_PATH, 0)
+    File.truncate(RESULT_PATH, 0)
 
-    response = HTTParty.get("https://forums.tigsource.com/index.php?topic=29750.0")
-    html = response.body
+    template_index = File.read(TEMPLATE_PATH_INDEX)
+    template_article = File.read(TEMPLATE_PATH_ARTICLE)
+
+    html = nil
+    if(File.exists?(CACHE_PATH))
+      puts "Using cache!"
+      html = File.read(CACHE_PATH)
+    else
+      response = HTTParty.get("https://forums.tigsource.com/index.php?topic=29750.0")
+      html = response.body
+      File.open(CACHE_PATH, "w") { |f| f.write html }
+    end
+
     doc = Nokogiri::HTML(html)
     elements = doc.css("td.windowbg")
     dukope_elements = elements.select { |e| e.css("a").first["title"] == "View the profile of dukope" }
+
+    articles = []
 
     dukope_elements.each do |element|
       date = element.css("div.smalltext")[1].text
@@ -27,8 +45,17 @@ class Script
 
 
       puts "Date: #{date}"
-      File.open(RESULT_FILE_PATH, "a") { |f| f.write html }
+
+      articles << {
+        date: date,
+        content: content.inner_html
+      }
     end
+
+    erb = ERB.new(template_index)
+    html = erb.result_with_hash(articles: articles)
+
+    File.open(RESULT_PATH, "w") { |f| f.write html }
   end
 
   def clean_date(date)
