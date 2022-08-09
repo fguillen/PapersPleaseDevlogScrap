@@ -5,7 +5,6 @@ require "erb"
 
 class Script
   TEMPLATE_PATH_INDEX = "#{__dir__}/templates/index.erb"
-  TEMPLATE_PATH_ARTICLE = "#{__dir__}/templates/article.erb"
 
   RESULT_PATH = "#{__dir__}/index.html"
   CACHE_PATH = "#{__dir__}/cache.html"
@@ -14,8 +13,6 @@ class Script
     File.truncate(RESULT_PATH, 0)
 
     template_index = File.read(TEMPLATE_PATH_INDEX)
-    template_article = File.read(TEMPLATE_PATH_ARTICLE)
-
     html = nil
     if(File.exists?(CACHE_PATH))
       puts "Using cache!"
@@ -33,8 +30,12 @@ class Script
     articles = []
 
     dukope_elements.each do |element|
-      date = element.css("div.smalltext")[1].text
-      date = clean_date(date)
+      datetime = element.css("div.smalltext")[1].text
+      datetime = DateTime.parse(clean_date(datetime))
+
+      date = datetime.strftime("%Y %B %d")
+      time = datetime.strftime("%H:%M")
+      id = datetime.strftime("%Y%m%d%H%M")
 
       content = element.css("div.post")
       content = clean_content(content, doc)
@@ -47,7 +48,9 @@ class Script
       puts "Date: #{date}"
 
       articles << {
+        id: id,
         date: date,
+        time: time,
         content: content.inner_html
       }
     end
