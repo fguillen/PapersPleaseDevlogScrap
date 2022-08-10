@@ -7,14 +7,14 @@ class Script
   RESULT_PATH = "#{__dir__}/index.html"
   CACHE_PATH = "#{__dir__}/cache.html"
   BASE_URL = "https://forums.tigsource.com/index.php?topic=29750"
-  USE_CACHE = true
+  USE_CACHE = false
 
   def run
     pages = (0..700).step(20).to_a
 
     articles = []
 
-    pages[0..0].each do |page|
+    pages.each do |page|
       articles.concat parse_page(page)
     end
 
