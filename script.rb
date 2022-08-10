@@ -7,14 +7,14 @@ class Script
   RESULT_PATH = "#{__dir__}/index.html"
   CACHE_PATH = "#{__dir__}/cache.html"
   BASE_URL = "https://forums.tigsource.com/index.php?topic=29750"
-  USE_CACHE = false
+  USE_CACHE = true
 
   def run
     pages = (0..700).step(20).to_a
 
     articles = []
 
-    pages.each do |page|
+    pages[0..0].each do |page|
       articles.concat parse_page(page)
     end
 
@@ -45,11 +45,11 @@ class Script
     else
       response = HTTParty.get("#{BASE_URL}.#{page}")
       html = response.body
-      File.open(CACHE_PATH, "w") { |f| f.write html }
+      File.open(CACHE_PATH, "w") { |f| f.write html } if USE_CACHE
     end
 
     doc = Nokogiri::HTML(html)
-    elements = doc.css("td.windowbg")
+    elements = doc.css("td.windowbg, td.windowbg2")
     dukope_elements = elements.select { |e| e.css("a").first["title"] == "View the profile of dukope" }
 
     articles = []
