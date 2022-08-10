@@ -150,3 +150,7 @@ blockquote {
 blockquote p {
   display: inline;
 }
+
+article img {
+  max-width: 100%;
+}
